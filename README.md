@@ -29,3 +29,7 @@ Matika a čeština pro 1.–5. třídu na telefon i tablet. Hrát: https://micha
 - 4. tř.: vyjmenovaná slova ve větách (byl/bil, mýt/mít…), s/z, pády, vzory podstatných jmen
 - 5. tř.: koncovky podstatných jmen, shoda přísudku s podmětem, mě/mně ve větách
 - navíc: pořadí vět v příběhu (2.), diktát s hlasem (3.), čtení s porozuměním, kořen/předpona/přípona, slovesa – osoba, číslo, čas, vy-/vý- a příbuzná slova (4.), podmět a přísudek, přímá řeč (5.)
+
+## Statistiky
+
+Apka posílá anonymní statistiky hraní (které obrazovky a funkce se používají, postup v %, země a město podle připojení). Neukládá jména ani IP adresy, jen náhodné ID zařízení v prohlížeči.
