@@ -4124,6 +4124,8 @@ renderMute();
 renderHome();
 drawHomeArt();
 show('home');
+// totals for the anonymous play statistics (analytics.js)
+window.appTotals = () => ({ topics: TOPICS.map(t => ({ id: t.id, grade: t.grade })), puzzle: ANIMALS.length, omalovanky: PAGES.length, karticky: CARDS.length, cisla: 10, abeceda: LETTERS.length, logika: LG_ORDER.length });
 })();
 </script>
 
