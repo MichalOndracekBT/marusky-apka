@@ -3899,10 +3899,13 @@ function enPic(p) {
   return `<span class="en-em">${p}</span>`;
 }
 let enVoiceSel = null;
+// British first, good natural voices before robotic ones; Apple's joke voices (Bubbles, Bad News…) never
+const EN_GOOD_VOICE = /daniel|kate|serena|martha|arthur|oliver|stephanie|samantha|karen|moira|tessa|google|microsoft|enhanced|premium|natural|neural|siri/i;
+const EN_FUNNY_VOICE = /albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|ralph|kathy|eddy|flo\b|grandma|grandpa|reed|rocko|sandy|shelley/i;
 function enVoice() {
   if (enVoiceSel) return enVoiceSel;
   try {
-    const score = v => (/^en[-_]GB/i.test(v.lang) ? 4 : 0) + (/google|enhanced|premium|natural|siri|daniel|serena|kate/i.test(v.name) ? 2 : 0) + (v.localService ? 1 : 0);
+    const score = v => (/^en[-_]GB/i.test(v.lang) ? 4 : 0) + (EN_GOOD_VOICE.test(v.name) ? 3 : 0) - (EN_FUNNY_VOICE.test(v.name) ? 8 : 0) + (v.localService ? 1 : 0);
     enVoiceSel = speechSynthesis.getVoices().filter(v => /^en([-_]|$)/i.test(v.lang)).sort((a, b) => score(b) - score(a))[0] || null;
   } catch (e) {}
   return enVoiceSel;
