@@ -1,6 +1,6 @@
 # Marušina škola
 
-Matika a čeština pro 1.–5. třídu na telefon i tablet. Hrát: https://michalondracekbt.github.io/marusky-apka/
+Matika, čeština a angličtina pro 1.–5. třídu na telefon i tablet. Hrát: https://michalondracekbt.github.io/marusky-apka/
 
 ## Zadání (jak to funguje)
 
@@ -29,6 +29,23 @@ Matika a čeština pro 1.–5. třídu na telefon i tablet. Hrát: https://micha
 - 4. tř.: vyjmenovaná slova ve větách (byl/bil, mýt/mít…), s/z, pády, vzory podstatných jmen
 - 5. tř.: koncovky podstatných jmen, shoda přísudku s podmětem, mě/mně ve větách
 - navíc: pořadí vět v příběhu (2.), diktát s hlasem (3.), čtení s porozuměním, kořen/předpona/přípona, slovesa – osoba, číslo, čas, vy-/vý- a příbuzná slova (4.), podmět a přísudek, přímá řeč (5.)
+
+## Angličtina (45 témat)
+
+Témata jsou na úvodní obrazovce rozdělená na **Slovíčka** a **Věty a fráze**. Výslovnost čte britský hlas zařízení – ťuknutím na 🔊 nebo na kartičku.
+
+- 1. tř.: barvy, čísla 1–10, zvířátka, hračky, ovoce, rodina · pozdravy a kouzelná slovíčka, první věty (It's a cat. I like apples.)
+- 2. tř.: ve škole, moje tělo, jídlo a pití, oblečení, čísla 11–20 · pokyny ve třídě (Stand up!), I like / I don't like, This is my… / I've got…
+- 3. tř.: divoká zvířata, můj domov, dny v týdnu, počasí, co umím dělat, pocity · can / can't, am / is / are, in / on / under, otázky a odpovědi
+- 4. tř.: můj den, sporty a koníčky, ve městě, povolání, měsíce a roční období · kolik je hodin, he plays / she reads, there is / there are, have got / has got, otázková slova
+- 5. tř.: jídlo a nákupy, příroda, protiklady, školní předměty, čísla do 100 · I am reading, was / were a minulý čas, porovnávání (bigger than), rozhovory (v obchodě, na ulici, u lékaře)
+
+Jak se učí:
+
+- **Nejdřív se naučit**: kartičky s obrázkem, anglickým a českým slovem – ťukni a poslechni si, nebo „Poslechnout všechna“. U vět ukázky s překladem.
+- **Lekce = 10 úloh** od poznávání ke skládání: poslech → obrázek, obrázek → slovo, překlad, **spoj dvojice**, **skládání slova z písmen** (od 2. tř.), **doplňování slova do věty**, **skládání věty ze slov** (od 3. tř. s jedním slovem navíc), poslech a skládání věty, výběr odpovědi v rozhovoru, hodiny a čísla.
+- **Opakování**: slovíčko, které nejde, se v lekci za chvíli vrátí v jiné podobě. Appka si u každého slova pamatuje, jak ho Maruška umí (tečka na kartičce: šedá – nové, žlutá – učím se, zelená – umím), a slabší slova dává častěji – i v Tréninku dne.
+- Hvězdy a odměny (puzzle, omalovánky, kartičky) jsou stejné jako u matiky a češtiny.
 
 ## Statistiky
 

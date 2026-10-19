@@ -552,6 +552,93 @@ table.col tr.res td{color:var(--tomato)}
 .q-in>*{max-width:100%}
 .q-in .cz-text{margin:0 auto}
 
+/* ANGLIČTINA */
+.mm-subj{grid-template-columns:repeat(3,1fr);gap:8px}
+.mm-subj button{flex-direction:column;gap:0;min-height:68px;padding:6px 2px;font-size:16px;line-height:1.1}
+.mm-subj .ico{font-size:28px;line-height:1.15}
+.mm-sub{grid-column:1/-1;margin:6px 0 -2px;font-size:17px;font-weight:800;color:var(--plum)}
+.mm-topic .en-t{display:block;margin-top:2px;font-size:13px;font-weight:700;color:var(--muted)}
+.ls-q:has(.en-q){justify-content:flex-start}
+.ls-q .en-q{margin:auto 0;display:flex;flex-direction:column;align-items:center;gap:8px}
+.en-ask{font-size:clamp(16px,4.4vw,20px);font-weight:700;color:var(--muted);line-height:1.25}
+.en-pic{line-height:1}
+.en-em{display:inline-block;font-size:clamp(64px,20vw,112px);line-height:1.05}
+.en-pic.sm .en-em{font-size:clamp(40px,11vw,60px)}
+.en-sw{display:inline-block;width:1em;height:1em;border-radius:50%;vertical-align:middle;box-shadow:inset 0 0 0 3px rgba(58,42,92,.2),0 3px 0 var(--shadow)}
+.en-pic .en-sw{width:clamp(76px,22vw,112px);height:clamp(76px,22vw,112px)}
+.en-num{display:inline-flex;align-items:center;justify-content:center;min-width:1.5em;height:1.5em;padding:0 .25em;border-radius:.45em;background:var(--card);color:var(--tomato);font-weight:800;line-height:1;box-shadow:0 4px 0 var(--shadow)}
+.en-pic .en-num{font-size:clamp(44px,13vw,64px)}
+.en-word{display:inline-flex;align-items:center;justify-content:center;gap:10px;max-width:100%;padding:8px 18px;border-radius:22px;background:var(--card);box-shadow:0 4px 0 var(--shadow);font-size:clamp(28px,8vw,42px);font-weight:800;line-height:1.15}
+.en-word.sent{font-size:clamp(20px,5.4vw,27px);padding:10px 16px;text-align:left}
+.en-word .spk{flex:none;font-size:.62em}
+.en-big-say{width:clamp(96px,28vw,140px);height:clamp(96px,28vw,140px);border-radius:50%;background:linear-gradient(145deg,#7FCBFF,#B78BFF);box-shadow:0 6px 0 #7A5BD6;font-size:clamp(44px,13vw,62px);line-height:1}
+.en-word:active,.en-big-say:active{transform:translateY(3px)}
+.en-word.tapped,.en-big-say.tapped,.en-card.tapped,.en-ex.tapped{animation:boing .35s}
+.en-cz{font-size:clamp(20px,5.6vw,28px);font-weight:800;color:var(--plum);line-height:1.25}
+.en-cz.big{font-size:clamp(30px,9vw,46px)}
+.en-sit{max-width:520px;font-size:clamp(19px,5vw,24px);font-weight:800;line-height:1.3}
+.cz-q.en-s{font-size:clamp(24px,6.6vw,34px)}
+.en-count{max-width:6.6em;font-size:clamp(34px,10vw,48px);line-height:1.2}
+.ls-msg .en-em,.en-ex .en-em{font-size:1.5em;vertical-align:middle}
+.ls-msg .en-sw{width:1.3em;height:1.3em}
+.ls-msg .en-num{font-size:1em;box-shadow:none}
+.ls-msg svg.clock{width:84px;height:84px;display:block;margin:4px auto}
+.ls-choices.pics{flex-wrap:nowrap;gap:8px}
+.ls-choice.pic{flex:1 1 0;min-width:0;max-width:112px;height:auto;aspect-ratio:1;padding:4px;display:flex;align-items:center;justify-content:center}
+.ls-choice.pic .en-em{font-size:clamp(36px,11vw,56px)}
+.ls-choice.pic .en-sw{width:62%;height:62%}
+.ls-choice.pic .en-num{font-size:clamp(24px,7vw,34px);box-shadow:none;background:none}
+.ls-choice.pic svg.clock{width:90%;height:90%}
+.ls-choice.pic.ok{background:var(--leaf)}
+.en-build{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:6px;max-width:560px}
+.en-slot{min-width:46px;height:46px;padding:0 10px;border-radius:14px;border:3px dashed rgba(58,42,92,.22);background:rgba(255,255,255,.35);display:inline-flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:var(--ink)}
+.en-slot.on{border:0;background:var(--card);box-shadow:0 3px 0 var(--shadow);animation:pop .2s}
+.en-build.spell .en-slot{min-width:32px;width:32px;padding:0;font-size:24px}
+.en-build.sol .en-slot{background:#E8F8EF;color:#2B8A5A}
+.en-end{font-size:26px;font-weight:800;margin-left:-2px}
+.ls-choices.tiles{gap:8px;max-width:600px;margin:0 auto}
+.en-tile{min-width:52px;height:52px;padding:0 14px;border-radius:16px;background:var(--card);box-shadow:0 4px 0 var(--shadow);font-size:21px;font-weight:800}
+.en-tile:active{transform:translateY(3px)}
+.en-tile.used{opacity:.25;box-shadow:none;pointer-events:none}
+.en-tile.del{background:#FFE9E9;color:#B8440F}
+.en-match{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;width:min(460px,calc(100vw - 32px))}
+.en-m{min-height:56px;padding:6px 8px;border-radius:18px;background:var(--card);box-shadow:0 4px 0 var(--shadow);display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800;line-height:1.15}
+.en-m.mr{font-size:17px;color:var(--plum)}
+.en-m .en-em{font-size:38px}
+.en-m .en-sw{width:36px;height:36px}
+.en-m .en-num{font-size:24px;box-shadow:none}
+.en-m.sel{background:#FFF0F8;box-shadow:0 0 0 3px var(--tomato),0 4px 0 var(--shadow)}
+.en-m.done{background:#DDF5E8;color:#2B8A5A;box-shadow:0 0 0 2px var(--leaf);animation:pop .3s}
+.en-m.bad{background:#FFE4E4;animation:shake .4s}
+.en-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 0 12px}
+.en-known{font-weight:800;color:var(--muted)}
+.en-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:10px;margin-bottom:14px}
+.en-card{position:relative;min-height:112px;padding:12px 8px 10px;border-radius:22px;background:var(--card);box-shadow:0 4px 0 var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center}
+.en-card .em{line-height:1.05}
+.en-card .em .en-em{font-size:44px}
+.en-card .em .en-sw{width:44px;height:44px}
+.en-card .em .en-num{font-size:26px}
+.en-card b{font-size:20px;line-height:1.15}
+.en-card small{font-size:14px;font-weight:700;color:var(--muted);line-height:1.2}
+.en-card.on{box-shadow:0 0 0 3px var(--sky),0 4px 0 var(--shadow)}
+.en-card .lv{position:absolute;top:9px;right:10px;width:10px;height:10px;border-radius:50%;background:rgba(58,42,92,.14)}
+.en-card .lv.l1{background:var(--sun)}
+.en-card .lv.l2{background:var(--leaf)}
+.en-exs{display:flex;flex-direction:column;gap:8px}
+.en-ex{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:16px;background:#F7F1FF;font-size:18px;line-height:1.3;text-align:left}
+.en-ex .tx{flex:1}
+.en-ex b{display:block;font-weight:800}
+.en-ex small{display:block;font-size:15px;font-weight:600;color:var(--muted)}
+.en-ex svg.clock{width:52px;height:52px;flex:none}
+.en-ex .en-num{font-size:20px;box-shadow:none}
+@media (max-height:720px){
+  #lesson.en .ls-pic{width:64px;height:64px}
+  #lesson.en .ls-info{font-size:13px}
+  #lesson.en .en-q .en-em{font-size:clamp(44px,14vw,72px)}
+  #lesson.en .en-big-say{width:84px;height:84px;font-size:40px}
+  #lesson.en .en-m{min-height:48px}
+}
+
 /* WIN */
 .overlay{position:absolute;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(32,48,71,.35)}
 .win-card{background:var(--card);border-radius:32px;padding:22px 20px 20px;width:min(360px,100%);text-align:center;box-shadow:0 8px 0 var(--shadow);animation:pop .35s cubic-bezier(.3,1.5,.6,1)}
@@ -590,7 +677,7 @@ table.col tr.res td{color:var(--tomato)}
         <button class="x" id="installClose" aria-label="Zavřít">✕</button>
       </div>
       <div class="hero-row"><h1>Marušina <span>škola</span></h1><div class="mascot" id="mascot" role="img" aria-label="Koník">🐴</div></div>
-      <p class="lead">Matika i čeština od 1. do 5. třídy. Nauč se, procvič a sbírej odměny.</p>
+      <p class="lead">Matika, čeština i angličtina od 1. do 5. třídy. Nauč se, procvič a sbírej odměny.</p>
       <div class="seg icons mm-subj" id="mmSubj"></div>
       <div class="mm-grade-row"><span>Třída</span><div class="mm-grades" id="mmGrades"></div></div>
       <button class="mm-daily" id="mmDaily"><span class="ico">🎯</span><span><b>Trénink dne</b><small>10 úloh napříč učivem</small></span></button>
@@ -3800,6 +3887,628 @@ TOPICS.push(
     learn: '<p>Uvozovací věta <b>před</b> přímou řečí: Maminka řekla<b>:</b> <b>„P</b>ojď domů.“</p><p>Uvozovací věta <b>za</b> přímou řečí: „Pojď domů<b>,“</b> řekla maminka. Otazník a vykřičník zůstávají: „Kde jsi?“ zeptal se táta.</p>',
     gen() { const [ok, wr, note] = CZ_PRIMA[Math.floor(Math.random() * CZ_PRIMA.length)]; return { key: ok, q: 'Která věta je napsaná <b>správně</b>?', a: ok, choices: czShuffle([ok, ...wr]), wide: true, hint: 'Hlídej dvojtečku, čárku, velké písmeno a uvozovky.', explain: `<b>${ok}</b><br>${note}` }; } }
 );
+/* ---------- ANGLIČTINA: slovíčka, fráze a věty pro 1.–5. třídu ---------- */
+const enEsc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const czPism = n => n >= 2 && n <= 4 ? 'písmena' : 'písmen';
+// a picture is an emoji, a colour '#RRGGBB', a number '12' or a clock 'clk:H:M'
+function enPic(p) {
+  if (!p) return '';
+  if (p[0] === '#') return `<i class="en-sw" style="background:${p}"></i>`;
+  if (/^\d+$/.test(p)) return `<b class="en-num">${p}</b>`;
+  if (p.startsWith('clk:')) { const [, h, m] = p.split(':'); return clockSvg(+h, +m); }
+  return `<span class="en-em">${p}</span>`;
+}
+let enVoiceSel = null;
+function enVoice() {
+  if (enVoiceSel) return enVoiceSel;
+  try {
+    const score = v => (/^en[-_]GB/i.test(v.lang) ? 4 : 0) + (/google|enhanced|premium|natural|siri|daniel|serena|kate/i.test(v.name) ? 2 : 0) + (v.localService ? 1 : 0);
+    enVoiceSel = speechSynthesis.getVoices().filter(v => /^en([-_]|$)/i.test(v.lang)).sort((a, b) => score(b) - score(a))[0] || null;
+  } catch (e) {}
+  return enVoiceSel;
+}
+const canHear = () => !muted && 'speechSynthesis' in window;
+// English voice (British, a bit slower); force = the child tapped 🔊, so it plays even when the app is muted
+function sayEn(text, o = {}) {
+  let fired = false; const end = () => { if (!fired && o.onend) { fired = true; o.onend(); } };
+  if (!text || !('speechSynthesis' in window) || (muted && !o.force)) { setTimeout(end, 0); return; }
+  try {
+    const synth = window.speechSynthesis, u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-GB'; u.rate = o.rate || .85; u.pitch = 1;
+    const v = enVoice(); if (v) { u.voice = v; u.lang = v.lang; }
+    u.onend = end; u.onerror = end;
+    lastUtterance = u;
+    const go = () => { try { synth.resume(); synth.speak(u); } catch (e) { end(); } };
+    if (synth.speaking || synth.pending) { synth.cancel(); setTimeout(go, 90); } else go();
+  } catch (e) { end(); }
+}
+
+// words: [picture, English, Czech, (spoken form)]
+const EN_COLOURS = [['#E53935', 'red', 'červená'], ['#1E88E5', 'blue', 'modrá'], ['#FDD835', 'yellow', 'žlutá'], ['#43A047', 'green', 'zelená'], ['#FB8C00', 'orange', 'oranžová'],
+  ['#F48FB1', 'pink', 'růžová'], ['#8E24AA', 'purple', 'fialová'], ['#8D6E63', 'brown', 'hnědá'], ['#212121', 'black', 'černá'], ['#FFFFFF', 'white', 'bílá'], ['#9E9E9E', 'grey', 'šedá']];
+// [thing, its colour, colours that could look similar (never offered)]
+const EN_COLOUR_OF = [['🍌', 'yellow', []], ['🍓', 'red', ['pink']], ['🐸', 'green', []], ['🥕', 'orange', ['red', 'yellow']], ['🐷', 'pink', ['red']], ['🍇', 'purple', ['pink', 'blue']],
+  ['🐻', 'brown', ['orange']], ['☁️', 'white', ['grey', 'blue']], ['🐘', 'grey', ['blue', 'white']], ['🍅', 'red', ['orange']], ['🐳', 'blue', ['grey']], ['🌻', 'yellow', ['orange', 'brown', 'green']],
+  ['🦩', 'pink', ['red', 'orange']], ['🎱', 'black', []], ['🌳', 'green', ['brown']], ['🍆', 'purple', ['pink', 'blue']], ['🚒', 'red', ['orange']], ['💙', 'blue', []], ['🍊', 'orange', ['yellow', 'red']], ['⛄', 'white', ['grey', 'blue']]];
+const EN_NUM_W = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+const EN_TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+const enNum = n => n < 20 ? EN_NUM_W[n] : n === 100 ? 'one hundred' : EN_TENS[Math.floor(n / 10)] + (n % 10 ? '-' + EN_NUM_W[n % 10] : '');
+const CZ_NUM = ['nula', 'jedna', 'dva', 'tři', 'čtyři', 'pět', 'šest', 'sedm', 'osm', 'devět', 'deset', 'jedenáct', 'dvanáct', 'třináct', 'čtrnáct', 'patnáct', 'šestnáct', 'sedmnáct', 'osmnáct', 'devatenáct', 'dvacet'];
+const EN_NUM1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => [String(n), enNum(n), CZ_NUM[n]]);
+const EN_NUM2 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map(n => [String(n), enNum(n), CZ_NUM[n]]);
+const EN_ANIMALS = [['🐱', 'cat', 'kočka'], ['🐶', 'dog', 'pes'], ['🐟', 'fish', 'ryba'], ['🐦', 'bird', 'pták'], ['🐰', 'rabbit', 'králík'], ['🐴', 'horse', 'kůň'],
+  ['🐮', 'cow', 'kráva'], ['🐷', 'pig', 'prase'], ['🐐', 'goat', 'koza'], ['🐑', 'sheep', 'ovce'], ['🐭', 'mouse', 'myš'], ['🐹', 'hamster', 'křeček']];
+const EN_TOYS = [['⚽', 'ball', 'míč'], ['🧸', 'teddy bear', 'medvídek'], ['🚗', 'car', 'auto'], ['🚲', 'bike', 'kolo'], ['🚂', 'train', 'vlak'], ['🤖', 'robot', 'robot'],
+  ['🎈', 'balloon', 'balónek'], ['🪁', 'kite', 'papírový drak'], ['🥁', 'drum', 'buben'], ['⛵', 'boat', 'loďka']];
+const EN_FRUIT = [['🍎', 'apple', 'jablko'], ['🍌', 'banana', 'banán'], ['🍊', 'orange', 'pomeranč'], ['🍐', 'pear', 'hruška'], ['🍋', 'lemon', 'citron'],
+  ['🍓', 'strawberry', 'jahoda'], ['🍒', 'cherries', 'třešně'], ['🍇', 'grapes', 'hroznové víno'], ['🍉', 'watermelon', 'meloun'], ['🍍', 'pineapple', 'ananas']];
+const EN_FAMILY = [['👩', 'mum', 'maminka'], ['👨', 'dad', 'tatínek'], ['👧', 'sister', 'sestra'], ['👦', 'brother', 'bratr'], ['👶', 'baby', 'miminko'],
+  ['👵', 'grandma', 'babička'], ['👴', 'grandpa', 'dědeček'], ['👪', 'family', 'rodina']];
+// phrases: [picture, English, Czech, (spoken form), tags, situation]
+// phrases sharing a tag could both fit (or both mean „Ahoj“), so they are never offered together
+const EN_HELLO = [
+  ['👋', 'Hello!', 'Ahoj!', '', 'hi ahoj', 'Potkáš kamaráda na hřišti. Jak ho pozdravíš?'],
+  ['🌞', 'Good morning!', 'Dobré ráno!', '', 'hi', 'Ráno vejdeš do třídy. Co řekneš paní učitelce?'],
+  ['🌙', 'Good night!', 'Dobrou noc!', '', 'bye', 'Večer jdeš spát. Co řekneš mamince?'],
+  ['🚪', 'Goodbye!', 'Na shledanou!', '', 'bye ahoj', 'Odpoledne odcházíš od babičky domů. Co řekneš?'],
+  ['🎁', 'Thank you!', 'Děkuji!', '', 'thx pl1', 'Kamarád ti dal dárek. Co mu řekneš?'],
+  ['🖍️', 'Please.', 'Prosím.', '', 'pl pl1', 'Chceš si od kamarádky půjčit pastelku. Jaké kouzelné slovíčko přidáš?'],
+  ['😔', 'Sorry!', 'Promiň!', '', '', 'Omylem do někoho strčíš. Co řekneš?'],
+  ['🍦', 'Yes, please.', 'Ano, prosím.', '', 'thx pl', 'Teta ti nabízí zmrzlinu a ty ji moc chceš. Co odpovíš?'],
+  ['🥦', 'No, thank you.', 'Ne, děkuji.', '', '', 'Teta ti nabízí brokolici, ale ty ji nechceš. Co zdvořile odpovíš?'],
+  ['🙋‍♀️', 'My name is Maruška.', 'Jmenuji se Maruška.', '', '', 'Někdo se tě zeptá: „What\'s your name?“ Co odpovíš?'],
+  ['😊', "I'm fine, thank you.", 'Mám se dobře, děkuji.', '', '', 'Někdo se tě zeptá: „How are you?“ Co odpovíš?'],
+  ['🎂', 'Happy birthday!', 'Všechno nejlepší k narozeninám!', '', '', 'Kamarádka má narozeniny. Co jí popřeješ?']
+];
+const EN_CLASS = [['🧍', 'Stand up!', 'Postav se!'], ['🪑', 'Sit down!', 'Sedni si!'], ['📖', 'Open your book!', 'Otevři si knihu!'], ['📕', 'Close your book!', 'Zavři si knihu!'],
+  ['👂', 'Listen!', 'Poslouchej!'], ['👀', 'Look!', 'Podívej se!'], ['🤫', 'Be quiet!', 'Buď potichu!'], ['👏', 'Clap your hands!', 'Zatleskej!'],
+  ['🙋', 'Put your hand up!', 'Přihlas se!'], ['✏️', 'Pick up your pencil!', 'Vezmi si tužku!'], ['🚶', 'Come here!', 'Pojď sem!'], ['🖍️', 'Colour the picture!', 'Vybarvi obrázek!']];
+const EN_SCHOOL = [['🖊️', 'pen', 'pero'], ['✏️', 'pencil', 'tužka'], ['📕', 'book', 'kniha'], ['🎒', 'school bag', 'školní taška'], ['📏', 'ruler', 'pravítko'],
+  ['✂️', 'scissors', 'nůžky'], ['🖍️', 'crayon', 'pastelka'], ['🪑', 'chair', 'židle'], ['👩‍🏫', 'teacher', 'učitelka'], ['💻', 'computer', 'počítač']];
+const EN_BODY = [['👀', 'eyes', 'oči'], ['👂', 'ear', 'ucho'], ['👃', 'nose', 'nos'], ['👄', 'mouth', 'pusa'], ['✋', 'hand', 'ruka'], ['☝️', 'finger', 'prst'],
+  ['🦵', 'leg', 'noha'], ['🙂', 'face', 'obličej'], ['🦷', 'tooth', 'zub'], ['👅', 'tongue', 'jazyk']];
+const EN_FOOD = [['🍞', 'bread', 'chleba'], ['🥛', 'milk', 'mléko'], ['🧀', 'cheese', 'sýr'], ['🥚', 'egg', 'vajíčko'], ['🍰', 'cake', 'dort'], ['🧃', 'juice', 'džus'],
+  ['💧', 'water', 'voda'], ['🍦', 'ice cream', 'zmrzlina'], ['🍕', 'pizza', 'pizza'], ['🍫', 'chocolate', 'čokoláda'], ['🍪', 'biscuit', 'sušenka']];
+const EN_CLOTHES = [['👕', 'T-shirt', 'tričko'], ['👗', 'dress', 'šaty'], ['👖', 'trousers', 'kalhoty'], ['👟', 'shoes', 'boty'], ['👒', 'hat', 'klobouk'], ['🩳', 'shorts', 'kraťasy'],
+  ['🧦', 'socks', 'ponožky'], ['🧥', 'coat', 'kabát'], ['🧣', 'scarf', 'šála'], ['🧤', 'gloves', 'rukavice']];
+const EN_WILD = [['🦁', 'lion', 'lev'], ['🐯', 'tiger', 'tygr'], ['🐘', 'elephant', 'slon'], ['🐵', 'monkey', 'opice'], ['🦒', 'giraffe', 'žirafa'], ['🦓', 'zebra', 'zebra'],
+  ['🐍', 'snake', 'had'], ['🐊', 'crocodile', 'krokodýl'], ['🐻', 'bear', 'medvěd'], ['🦜', 'parrot', 'papoušek'], ['🐸', 'frog', 'žába'], ['🦘', 'kangaroo', 'klokan']];
+const EN_HOUSE = [['🏠', 'house', 'dům'], ['🚪', 'door', 'dveře'], ['🛏️', 'bed', 'postel'], ['🛋️', 'sofa', 'pohovka'], ['🪑', 'chair', 'židle'], ['📺', 'TV', 'televize'],
+  ['🛁', 'bath', 'vana'], ['🚿', 'shower', 'sprcha'], ['🚽', 'toilet', 'záchod'], ['🕰️', 'clock', 'hodiny'], ['💡', 'lamp', 'lampa']];
+const EN_DAYS = [['', 'Monday', 'pondělí'], ['', 'Tuesday', 'úterý'], ['', 'Wednesday', 'středa'], ['', 'Thursday', 'čtvrtek'], ['', 'Friday', 'pátek'], ['', 'Saturday', 'sobota'], ['', 'Sunday', 'neděle']];
+const EN_WEATHER = [['☀️', 'sunny', 'slunečno'], ['🌧️', 'rainy', 'deštivo'], ['🌬️', 'windy', 'větrno'], ['🌨️', 'snowy', 'sněží'], ['☁️', 'cloudy', 'zataženo'],
+  ['🌩️', 'stormy', 'bouřka'], ['🌈', 'rainbow', 'duha']];
+const EN_ACTS = [['🏊', 'swim', 'plavat'], ['🏃', 'run', 'běhat'], ['💃', 'dance', 'tancovat'], ['🎤', 'sing', 'zpívat'], ['🧗', 'climb', 'šplhat'], ['🚴', 'ride a bike', 'jezdit na kole'],
+  ['⛷️', 'ski', 'lyžovat'], ['⛸️', 'skate', 'bruslit'], ['📖', 'read', 'číst'], ['✍️', 'write', 'psát'], ['🎨', 'paint', 'malovat'], ['⚽', 'play football', 'hrát fotbal']];
+const EN_FEEL = [['😊', 'happy', 'šťastný'], ['😢', 'sad', 'smutný'], ['😠', 'angry', 'naštvaný'], ['😴', 'tired', 'unavený'], ['😱', 'scared', 'vystrašený'],
+  ['🤒', 'ill', 'nemocný'], ['🥶', 'cold', 'je mi zima'], ['🥵', 'hot', 'je mi horko']];
+const EN_ROUTINE = [['⏰', 'get up', 'vstávat'], ['🚿', 'have a shower', 'sprchovat se'], ['🦷', 'brush my teeth', 'čistit si zuby'], ['👕', 'get dressed', 'oblékat se'],
+  ['🥣', 'have breakfast', 'snídat'], ['🏫', 'go to school', 'chodit do školy'], ['📝', 'do my homework', 'dělat úkoly'], ['🐕', 'walk the dog', 'venčit psa'],
+  ['📺', 'watch TV', 'dívat se na televizi'], ['🛏️', 'go to bed', 'chodit spát']];
+const EN_SPORT = [['⚽', 'football', 'fotbal'], ['🎾', 'tennis', 'tenis'], ['🏀', 'basketball', 'basketbal'], ['🏐', 'volleyball', 'volejbal'], ['🏊', 'swimming', 'plavání'],
+  ['⛷️', 'skiing', 'lyžování'], ['🏇', 'horse riding', 'jízda na koni'], ['🚴', 'cycling', 'jízda na kole'], ['💃', 'dancing', 'tanec'], ['🎨', 'painting', 'malování'],
+  ['📚', 'reading', 'čtení'], ['🎹', 'playing the piano', 'hra na klavír']];
+const EN_TOWN = [['🏫', 'school', 'škola'], ['🏪', 'shop', 'obchod'], ['🏥', 'hospital', 'nemocnice'], ['🎬', 'cinema', 'kino'], ['🏤', 'post office', 'pošta'], ['⛪', 'church', 'kostel'],
+  ['🏦', 'bank', 'banka'], ['🚉', 'station', 'nádraží'], ['🏰', 'castle', 'hrad'], ['🌳', 'park', 'park'], ['🍽️', 'restaurant', 'restaurace'], ['📚', 'library', 'knihovna']];
+const EN_JOBS = [['👩‍⚕️', 'doctor', 'lékařka'], ['👩‍🏫', 'teacher', 'učitelka'], ['👨‍🌾', 'farmer', 'farmář'], ['👨‍🍳', 'cook', 'kuchař'], ['👮', 'police officer', 'policista'],
+  ['👨‍🚒', 'firefighter', 'hasič'], ['👨‍✈️', 'pilot', 'pilot'], ['👩‍🎤', 'singer', 'zpěvačka'], ['👷', 'builder', 'stavbař'], ['👩‍🎨', 'artist', 'malířka'],
+  ['👨‍🚀', 'astronaut', 'astronaut'], ['👨‍🔧', 'mechanic', 'automechanik']];
+const EN_MONTHS = [['', 'January', 'leden'], ['', 'February', 'únor'], ['', 'March', 'březen'], ['', 'April', 'duben'], ['', 'May', 'květen'], ['', 'June', 'červen'],
+  ['', 'July', 'červenec'], ['', 'August', 'srpen'], ['', 'September', 'září'], ['', 'October', 'říjen'], ['', 'November', 'listopad'], ['', 'December', 'prosinec']];
+const EN_SEASONS = [['🌷', 'spring', 'jaro'], ['🏖️', 'summer', 'léto'], ['🍂', 'autumn', 'podzim'], ['⛄', 'winter', 'zima']];
+// month index → season; only months that clearly belong to one season are asked
+const EN_MONTH_SEASON = { 0: 3, 1: 3, 3: 0, 4: 0, 6: 1, 7: 1, 9: 2, 10: 2 };
+const EN_SHOP = [['🥔', 'potato', 'brambor'], ['🍅', 'tomato', 'rajče'], ['🥕', 'carrot', 'mrkev'], ['🥒', 'cucumber', 'okurka'], ['🧅', 'onion', 'cibule'], ['🍚', 'rice', 'rýže'],
+  ['🍝', 'pasta', 'těstoviny'], ['🍗', 'chicken', 'kuře'], ['🍯', 'honey', 'med'], ['🧈', 'butter', 'máslo'], ['🧂', 'salt', 'sůl'], ['🍬', 'sweets', 'bonbony']];
+const EN_NATURE = [['⛰️', 'mountain', 'hora'], ['🌊', 'sea', 'moře'], ['🌲', 'forest', 'les'], ['🏝️', 'island', 'ostrov'], ['🏜️', 'desert', 'poušť'], ['🌋', 'volcano', 'sopka'],
+  ['☀️', 'sun', 'slunce'], ['🌙', 'moon', 'měsíc'], ['⭐', 'star', 'hvězda'], ['☁️', 'cloud', 'mrak'], ['🌈', 'rainbow', 'duha'], ['🌸', 'flower', 'květina']];
+const EN_ADJ = [['🐘', 'big', 'velký'], ['🐭', 'small', 'malý'], ['🐆', 'fast', 'rychlý'], ['🐢', 'slow', 'pomalý'], ['🔥', 'hot', 'horký'], ['🧊', 'cold', 'studený'],
+  ['👴', 'old', 'starý'], ['👶', 'young', 'mladý'], ['🦒', 'tall', 'vysoký'], ['😊', 'happy', 'veselý'], ['😢', 'sad', 'smutný']];
+const EN_OPP = [['big', 'small'], ['fast', 'slow'], ['hot', 'cold'], ['old', 'young'], ['tall', 'short'], ['happy', 'sad'], ['long', 'short'], ['clean', 'dirty'],
+  ['new', 'old'], ['good', 'bad'], ['full', 'empty'], ['heavy', 'light'], ['open', 'closed'], ['easy', 'difficult'], ['rich', 'poor'], ['loud', 'quiet']];
+const EN_OPP_CZ = { big: 'velký', small: 'malý', fast: 'rychlý', slow: 'pomalý', hot: 'horký', cold: 'studený', old: 'starý', young: 'mladý', tall: 'vysoký', short: 'krátký, nízký',
+  happy: 'veselý', sad: 'smutný', long: 'dlouhý', clean: 'čistý', dirty: 'špinavý', new: 'nový', good: 'dobrý', bad: 'špatný', full: 'plný', empty: 'prázdný', heavy: 'těžký',
+  light: 'lehký', open: 'otevřený', closed: 'zavřený', easy: 'snadný', difficult: 'obtížný', rich: 'bohatý', poor: 'chudý', loud: 'hlasitý', quiet: 'tichý' };
+const EN_SUBJ = [['🔢', 'maths', 'matematika'], ['🇨🇿', 'Czech', 'čeština'], ['🇬🇧', 'English', 'angličtina'], ['🎨', 'art', 'výtvarná výchova'], ['🎵', 'music', 'hudební výchova'],
+  ['⚽', 'PE', 'tělocvik', 'P.E.'], ['🔬', 'science', 'přírodověda'], ['🗺️', 'geography', 'zeměpis'], ['🏛️', 'history', 'dějepis'], ['💻', 'IT', 'informatika', 'I.T.']];
+
+// sentences: [English with *the missing word*, wrong words, Czech, picture, (note)]
+const EN_S1 = [
+  ["It's a *cat*.", ['dog', 'cow'], 'To je kočka.', '🐱'], ["It's a *dog*.", ['cat', 'pig'], 'To je pes.', '🐶'], ["It's a *horse*.", ['duck', 'mouse'], 'To je kůň.', '🐴'],
+  ["It's a *ball*.", ['car', 'bike'], 'To je míč.', '⚽'], ["It's a *car*.", ['train', 'boat'], 'To je auto.', '🚗'], ["It's a *kite*.", ['drum', 'robot'], 'To je drak.', '🪁'],
+  ["It's an *apple*.", ['orange', 'banana'], 'To je jablko.', '🍎'], ["It's *red*.", ['blue', 'green'], 'Je červená.', '🍓'], ["It's *yellow*.", ['pink', 'brown'], 'Je žlutý.', '🍌'],
+  ["It's *green*.", ['red', 'orange'], 'Je zelená.', '🐸'], ['I like *apples*.', ['bananas', 'pears'], 'Mám ráda jablka.', '🍎'], ['I like *bananas*.', ['apples', 'grapes'], 'Mám ráda banány.', '🍌'],
+  ['This is my *mum*.', ['dad', 'brother'], 'To je moje maminka.', '👩'], ['This is my *dad*.', ['mum', 'sister'], 'To je můj tatínek.', '👨'], ["I'm *six*.", ['ten', 'two'], 'Je mi šest.', '6'],
+  ['Look, a *bird*!', ['fish', 'rabbit'], 'Podívej, pták!', '🐦']
+];
+const EN_S2A = [
+  ['I *like* pizza.', ["don't like"], 'Mám ráda pizzu.', '🍕👍'], ["I *don't like* milk.", ['like'], 'Nemám ráda mléko.', '🥛👎'], ['I *like* cats.', ["don't like"], 'Mám ráda kočky.', '🐱👍'],
+  ["I *don't like* spiders.", ['like'], 'Nemám ráda pavouky.', '🕷️👎'], ['I *like* horses.', ["don't like"], 'Mám ráda koně.', '🐴👍'], ["I *don't like* cheese.", ['like'], 'Nemám ráda sýr.', '🧀👎'],
+  ["I *don't like* carrots.", ['like'], 'Nemám ráda mrkev.', '🥕👎'], ['I like *bananas*.', ['apples', 'grapes'], 'Mám ráda banány.', '🍌👍'], ['I like *chocolate*.', ['cheese', 'bread'], 'Mám ráda čokoládu.', '🍫👍'],
+  ['I like *ice cream*.', ['milk', 'eggs'], 'Mám ráda zmrzlinu.', '🍦👍'], ['*Do* you like pizza?', ['Are', 'Is'], 'Máš ráda pizzu?', '🍕❓'], ['Do you like cats? Yes, I *do*.', ["don't"], 'Máš ráda kočky? Ano, mám.', '🐱👍'],
+  ["Do you like milk? No, I *don't*.", ['do'], 'Máš ráda mléko? Ne, nemám.', '🥛👎'], ['I like *red*.', ['blue', 'green'], 'Mám ráda červenou.', '🔴'], ['I like *dogs*.', ['cats', 'fish'], 'Mám ráda psy.', '🐶👍']
+];
+const EN_S2B = [
+  ['This is my *pencil*.', ['ruler', 'bag'], 'To je moje tužka.', '✏️'], ['This is my *school bag*.', ['book', 'pen'], 'To je moje školní taška.', '🎒'],
+  ['This is my *teacher*.', ['sister', 'mum'], 'To je moje paní učitelka.', '👩‍🏫'], ['This is my *grandpa*.', ['brother', 'baby'], 'To je můj dědeček.', '👴'],
+  ["I've got a *dog*.", ['cat', 'fish'], 'Mám psa.', '🐶'], ["I've got a *bike*.", ['train', 'robot'], 'Mám kolo.', '🚲'], ["I've got a new *dress*.", ['coat', 'cap'], 'Mám nové šaty.', '👗'],
+  ["I've *got* two eyes.", ['like', 'am'], 'Mám dvě oči.', '👀'], ["I've got *ten* fingers.", ['two', 'five'], 'Mám deset prstů.', '🖐️🖐️'], ['Is it a *cat*?', ['dog', 'bird'], 'Je to kočka?', '🐱❓'],
+  ['Is it a *ball*?', ['kite', 'car'], 'Je to míč?', '⚽❓'], ['Is it a cat? Yes, it *is*.', ["isn't"], 'Je to kočka? Ano, je.', '🐱'], ["Is it a dog? No, it *isn't*.", ['is'], 'Je to pes? Ne, není.', '🐱'],
+  ['*This* is my book.', ['Is', 'Am'], 'To je moje kniha.', '📕']
+];
+const EN_S3A = [
+  ['I *can* swim.', ["can't"], 'Umím plavat.', '🏊'], ['A fish *can* swim.', ["can't"], 'Ryba umí plavat.', '🐟'], ["A fish *can't* walk.", ['can'], 'Ryba neumí chodit.', '🐟'],
+  ['A bird *can* fly.', ["can't"], 'Pták umí létat.', '🐦'], ["A cat *can't* fly.", ['can'], 'Kočka neumí létat.', '🐱'], ['A monkey *can* climb.', ["can't"], 'Opice umí šplhat.', '🐵'],
+  ["A snake *can't* run.", ['can'], 'Had neumí běhat.', '🐍'], ['A horse *can* run fast.', ["can't"], 'Kůň umí rychle běhat.', '🐴'], ['A frog *can* jump.', ["can't"], 'Žába umí skákat.', '🐸'],
+  ["A penguin *can't* fly.", ['can'], 'Tučňák neumí létat.', '🐧'], ['*Can* you ski?', ['Are', 'Is'], 'Umíš lyžovat?', '⛷️❓'], ['Can you swim? Yes, I *can*.', ["can't"], 'Umíš plavat? Ano, umím.', '🏊👍'],
+  ["Can you fly? No, I *can't*.", ['can'], 'Umíš létat? Ne, neumím.', '🙅'], ['I can *ride* a bike.', ['swim', 'sing'], 'Umím jezdit na kole.', '🚴'], ['She *can* dance.', ["can't"], 'Ona umí tancovat.', '💃'],
+  ['I can *sing*.', ['ski', 'read'], 'Umím zpívat.', '🎤']
+];
+const EN_S3B = [
+  ['I *am* Maruška.', ['is', 'are'], 'Jsem Maruška.', '🙋‍♀️'], ['You *are* my friend.', ['am', 'is'], 'Jsi moje kamarádka.', '🤝'], ['He *is* my brother.', ['am', 'are'], 'On je můj bratr.', '👦'],
+  ['She *is* my sister.', ['am', 'are'], 'Ona je moje sestra.', '👧'], ['It *is* a dog.', ['am', 'are'], 'Je to pes.', '🐶'], ['We *are* friends.', ['is', 'am'], 'Jsme kamarádky.', '👭'],
+  ['They *are* happy.', ['is', 'am'], 'Jsou šťastní.', '😊😊'], ['I *am* nine.', ['is', 'are'], 'Je mi devět.', '9'], ['The cat *is* small.', ['are', 'am'], 'Kočka je malá.', '🐱'],
+  ['My mum *is* a teacher.', ['are', 'am'], 'Moje maminka je učitelka.', '👩‍🏫'], ['The apples *are* red.', ['is', 'am'], 'Jablka jsou červená.', '🍎🍎'], ['*Are* you happy?', ['Is', 'Am'], 'Jsi šťastná?', '😊❓'],
+  ['*Is* it a cat?', ['Are', 'Am'], 'Je to kočka?', '🐱❓'], ["I'm *not* sad.", ['no', 'am'], 'Nejsem smutná.', '🙂'], ['The dogs *are* hungry.', ['is', 'am'], 'Psi mají hlad.', '🐶🐶'],
+  ['Ema and Klára *are* friends.', ['is', 'am'], 'Ema a Klára jsou kamarádky.', '👭']
+];
+const EN_S3C = [
+  ['The cat is *on* the bed.', ['in', 'under'], 'Kočka je na posteli.', '🐱🛏️'], ['The ball is *under* the chair.', ['on', 'in'], 'Míč je pod židlí.', '⚽🪑'],
+  ['The pencil is *in* the bag.', ['on', 'under'], 'Tužka je v tašce.', '✏️🎒'], ['The dog is *next to* the door.', ['in', 'under'], 'Pes je vedle dveří.', '🐶🚪'],
+  ['The book is *on* the table.', ['under', 'in'], 'Kniha je na stole.', '📕'], ['The fish is *in* the water.', ['on', 'under'], 'Ryba je ve vodě.', '🐟💧'],
+  ['The mouse is *under* the bed.', ['on', 'next to'], 'Myš je pod postelí.', '🐭🛏️'], ['The teddy bear is *on* the sofa.', ['in', 'under'], 'Medvídek je na pohovce.', '🧸🛋️'],
+  ['My shoes are *under* the bed.', ['on', 'in'], 'Moje boty jsou pod postelí.', '👟🛏️'], ['The milk is *in* the fridge.', ['on', 'under'], 'Mléko je v lednici.', '🥛'],
+  ['The lamp is *next to* the bed.', ['in', 'under'], 'Lampa je vedle postele.', '💡🛏️'], ['The clock is *on* the wall.', ['in', 'under'], 'Hodiny jsou na zdi.', '🕰️'],
+  ['Mum is *in* the kitchen.', ['on', 'under'], 'Maminka je v kuchyni.', '👩🍳'], ['The car is *in* the garage.', ['on', 'under'], 'Auto je v garáži.', '🚗'],
+  ['*Where* is the cat?', ['What', 'Who'], 'Kde je kočka?', '🐱❓'], ['The cat is *between* the dogs.', ['under', 'on'], 'Kočka je mezi psy.', '🐶🐱🐶']
+];
+const EN_S4A = [
+  ['She *plays* tennis.', ['play', 'playing'], 'Ona hraje tenis.', '🎾'], ['I *play* football.', ['plays', 'playing'], 'Hraju fotbal.', '⚽'], ['He *likes* pizza.', ['like', 'liking'], 'On má rád pizzu.', '🍕'],
+  ['My sister *reads* books.', ['read', 'reading'], 'Moje sestra čte knihy.', '📚'], ['We *go* to school.', ['goes', 'going'], 'Chodíme do školy.', '🏫'],
+  ['Maruška *rides* a horse.', ['ride', 'riding'], 'Maruška jezdí na koni.', '🏇'], ['They *live* in Prague.', ['lives', 'living'], 'Bydlí v Praze.', '🏙️'],
+  ['My dad *works* in a hospital.', ['work', 'working'], 'Můj tatínek pracuje v nemocnici.', '🏥'], ["He *doesn't* like milk.", ["don't", "isn't"], 'On nemá rád mléko.', '🥛👎'],
+  ["I *don't* like spiders.", ["doesn't", "isn't"], 'Nemám ráda pavouky.', '🕷️👎'], ['*Does* she like cats?', ['Do', 'Is'], 'Má ráda kočky?', '🐱❓'],
+  ['*Do* you like horses?', ['Does', 'Are'], 'Máš ráda koně?', '🐴❓'], ['She *gets up* at seven.', ['get up', 'getting up'], 'Vstává v sedm.', '⏰'],
+  ['The cat *sleeps* on the sofa.', ['sleep', 'sleeping'], 'Kočka spí na pohovce.', '🐱🛋️'], ['My brother *watches* TV.', ['watch', 'watchs'], 'Můj bratr se dívá na televizi.', '📺', 'Po ch přidáváme -es: watches.'],
+  ['Mum *goes* to work by bus.', ['go', 'gos'], 'Maminka jezdí do práce autobusem.', '🚌', 'Po o přidáváme -es: goes.']
+];
+const EN_S4B = [
+  ['There *is* a cat in the garden.', ['are'], 'Na zahradě je kočka.', '🐱🌳'], ['There *are* two dogs.', ['is'], 'Jsou tam dva psi.', '🐶🐶'], ['There *is* a book on the table.', ['are'], 'Na stole je kniha.', '📕'],
+  ['There *are* three apples.', ['is'], 'Jsou tam tři jablka.', '🍎🍎🍎'], ['There *is* a park in my town.', ['are'], 'U nás ve městě je park.', '🌳'],
+  ['There *are* five chairs in the kitchen.', ['is'], 'V kuchyni je pět židlí.', '🪑🪑🪑🪑🪑', 'Česky „je pět židlí“, ale židlí je víc → anglicky there are.'],
+  ['There *is* a bird in the sky.', ['are'], 'Na nebi je pták.', '🐦☁️'], ['There *are* many stars in the sky.', ['is'], 'Na nebi je spousta hvězd.', '⭐⭐⭐', 'Hvězd je hodně → there are.'],
+  ['*Is* there a shop near here?', ['Are'], 'Je tady blízko obchod?', '🏪❓'], ['*Are* there any biscuits?', ['Is'], 'Jsou tu nějaké sušenky?', '🍪❓'],
+  ["There *isn't* a cinema in my village.", ["aren't"], 'V naší vesnici není kino.', '🎬'], ["There *aren't* any eggs.", ["isn't"], 'Nejsou tu žádná vajíčka.', '🥚'],
+  ['There *is* a horse in the field.', ['are'], 'Na poli je kůň.', '🐴'], ['There *are* four horses in the stable.', ['is'], 'Ve stáji jsou čtyři koně.', '🐴🐴🐴🐴'],
+  ['There *are* six children in the playground.', ['is'], 'Na hřišti je šest dětí.', '🧒🧒🧒🧒🧒🧒', 'Česky „je šest dětí“, ale dětí je víc → there are.'], ['There *is* a lamp next to the bed.', ['are'], 'Vedle postele je lampa.', '💡🛏️']
+];
+const EN_S4C = [
+  ['I *have got* a sister.', ['has got'], 'Mám sestru.', '👧'], ['She *has got* long hair.', ['have got'], 'Ona má dlouhé vlasy.', '👱‍♀️'], ['He *has got* a new bike.', ['have got'], 'On má nové kolo.', '🚲'],
+  ['We *have got* a dog.', ['has got'], 'Máme psa.', '🐶'], ['My cat *has got* green eyes.', ['have got'], 'Moje kočka má zelené oči.', '🐱'], ['They *have got* a big house.', ['has got'], 'Mají velký dům.', '🏠'],
+  ['*Have* you got a pet?', ['Has'], 'Máš nějaké zvířátko?', '🐹❓'], ['*Has* she got a brother?', ['Have'], 'Má bratra?', '👦❓'], ["I *haven't got* a phone.", ["hasn't got"], 'Nemám mobil.', '📱'],
+  ["He *hasn't got* any sweets.", ["haven't got"], 'Nemá žádné bonbony.', '🍬'], ['An elephant *has got* big ears.', ['have got'], 'Slon má velké uši.', '🐘'],
+  ['A spider *has got* eight legs.', ['have got'], 'Pavouk má osm nohou.', '🕷️'], ['Have you got a bike? Yes, I *have*.', ['has'], 'Máš kolo? Ano, mám.', '🚲'],
+  ["Has he got a cat? No, he *hasn't*.", ["haven't"], 'Má kočku? Ne, nemá.', '🐱'], ['My grandma *has got* a garden.', ['have got'], 'Moje babička má zahradu.', '👵🌷'],
+  ['Horses *have got* long tails.', ['has got'], 'Koně mají dlouhé ocasy.', '🐴']
+];
+const EN_S4D = [
+  ['*What* is your name?', ['Where', 'Who'], 'Jak se jmenuješ?', '🙋‍♀️'], ['*Where* do you live?', ['When', 'Who'], 'Kde bydlíš?', '🏠'], ['*Who* is your best friend?', ['Where', 'When'], 'Kdo je tvoje nejlepší kamarádka?', '👭'],
+  ['*When* is your birthday?', ['Where', 'Who'], 'Kdy máš narozeniny?', '🎂'], ['*How many* brothers have you got?', ['How old', 'Where'], 'Kolik máš bratrů?', '👦👦'],
+  ['*How old* are you?', ['How many', 'Who'], 'Kolik je ti let?', '🎂'], ['*What* colour is your bag?', ['Where', 'Who'], 'Jakou barvu má tvoje taška?', '🎒'],
+  ['*Where* is my pencil?', ['What', 'When'], 'Kde je moje tužka?', '✏️❓'], ['*What* time is it?', ['Where', 'Who'], 'Kolik je hodin?', '🕒'], ['*Who* is that girl?', ['What', 'When'], 'Kdo je ta holka?', '👧'],
+  ['*When* do you get up?', ['Who', 'Where'], 'Kdy vstáváš?', '⏰'], ['*How* are you?', ['Who', 'Where'], 'Jak se máš?', '🙂'], ['*What* do you like?', ['Who', 'When'], 'Co máš ráda?', '❤️'],
+  ['*Where* are my shoes?', ['Who', 'When'], 'Kde jsou moje boty?', '👟']
+];
+const EN_S5A = [
+  ['I *am* reading a book.', ['is', 'are'], 'Právě čtu knihu.', '📖'], ['She *is* riding a horse.', ['am', 'are'], 'Právě jezdí na koni.', '🏇'], ['They *are* playing football.', ['is', 'am'], 'Právě hrají fotbal.', '⚽'],
+  ['Look! The dog *is* running.', ['are', 'am'], 'Podívej! Pes běží.', '🐕'], ['We are *having* lunch.', ['have', 'has'], 'Právě obědváme.', '🍽️'], ['He is *swimming* in the sea.', ['swim', 'swims'], 'Plave v moři.', '🏊🌊'],
+  ['It *is* raining.', ['are', 'am'], 'Prší.', '🌧️'], ['The birds *are* singing.', ['is', 'am'], 'Ptáci zpívají.', '🐦🎶'], ['Mum is *cooking* dinner.', ['cook', 'cooks'], 'Maminka vaří večeři.', '👩‍🍳'],
+  ["I'm *not* sleeping.", ['no', "don't"], 'Nespím.', '😃'], ['*Are* you listening?', ['Is', 'Do'], 'Posloucháš?', '👂❓'], ['What *are* you doing?', ['is', 'do'], 'Co děláš?', '❓'],
+  ['Ema is *writing* a letter.', ['write', 'writes'], 'Ema píše dopis.', '✍️'], ['The baby *is* crying.', ['are', 'am'], 'Miminko pláče.', '👶😭'], ['Dad is *washing* the car.', ['wash', 'washes'], 'Tatínek myje auto.', '🚗'],
+  ['The children are *dancing*.', ['dance', 'dances'], 'Děti tančí.', '💃']
+];
+const EN_S5B = [
+  ['I *was* at school yesterday.', ['were', 'am'], 'Včera jsem byla ve škole.', '🏫'], ['We *were* at the zoo.', ['was', 'are'], 'Byli jsme v zoo.', '🦁'], ['It *was* sunny yesterday.', ['were', 'is'], 'Včera bylo slunečno.', '☀️'],
+  ['They *were* happy.', ['was', 'is'], 'Byli šťastní.', '😊'], ['Yesterday I *played* tennis.', ['play', 'plays'], 'Včera jsem hrála tenis.', '🎾'],
+  ['Last summer we *went* to the seaside.', ['go', 'goes'], 'Loni v létě jsme jeli k moři.', '🌊', 'go → went (nepravidelné sloveso)'], ['She *watched* a film.', ['watch', 'watches'], 'Dívala se na film.', '🎬'],
+  ['I *had* pizza for lunch.', ['have', 'has'], 'K obědu jsem měla pizzu.', '🍕', 'have → had'], ['We *saw* a big elephant.', ['see', 'sees'], 'Viděli jsme velkého slona.', '🐘', 'see → saw'],
+  ['My mum *made* a cake.', ['make', 'makes'], 'Maminka upekla dort.', '🍰', 'make → made'], ['*Were* you at home?', ['Was', 'Are'], 'Byla jsi doma?', '🏠❓'], ['*Was* it cold?', ['Were', 'Is'], 'Byla zima?', '🥶❓'],
+  ["I *wasn't* tired.", ["weren't", "isn't"], 'Nebyla jsem unavená.', '😃'], ['He *visited* his grandma.', ['visit', 'visits'], 'Navštívil babičku.', '👵'],
+  ['I *helped* my mum in the garden.', ['help', 'helps'], 'Pomáhala jsem mamince na zahradě.', '👩🌷'], ['The film *was* great!', ['were', 'are'], 'Ten film byl skvělý!', '🎬']
+];
+const EN_S5C = [
+  ['An elephant is *bigger* than a mouse.', ['big', 'biggest'], 'Slon je větší než myš.', '🐘🐭'], ['A horse is *faster* than a cow.', ['fast', 'fastest'], 'Kůň je rychlejší než kráva.', '🐴🐮'],
+  ['A giraffe is *taller* than a zebra.', ['tall', 'tallest'], 'Žirafa je vyšší než zebra.', '🦒🦓'], ['A mouse is *smaller* than a cat.', ['small', 'smallest'], 'Myš je menší než kočka.', '🐭🐱'],
+  ['A snail is *slower* than a dog.', ['slow', 'slowest'], 'Šnek je pomalejší než pes.', '🐌🐶'], ['My grandpa is *older* than my dad.', ['old', 'oldest'], 'Můj dědeček je starší než můj tatínek.', '👴👨'],
+  ['Summer is *hotter* than spring.', ['hot', 'hoter'], 'Léto je teplejší než jaro.', '☀️🌷', 'hot → hotter (t se zdvojí)'], ['My sister is *younger* than me.', ['young', 'youngest'], 'Moje sestra je mladší než já.', '👧'],
+  ['A plane is *faster* than a car.', ['fast', 'more fast'], 'Letadlo je rychlejší než auto.', '✈️🚗'], ['This book is *better* than that one.', ['gooder', 'good'], 'Tahle kniha je lepší než tamta.', '📚', 'good → better (nepravidelné)'],
+  ['The weather is *worse* than yesterday.', ['badder', 'bad'], 'Počasí je horší než včera.', '🌧️', 'bad → worse (nepravidelné)'], ['A whale is *bigger* than a dolphin.', ['big', 'more big'], 'Velryba je větší než delfín.', '🐳🐬'],
+  ['A tortoise is *slower* than a rabbit.', ['slow', 'more slow'], 'Želva je pomalejší než králík.', '🐢🐰'], ['The cheetah is the *fastest* land animal.', ['faster', 'fast'], 'Gepard je nejrychlejší suchozemské zvíře.', '🐆', 'the fastest = nejrychlejší'],
+  ['Prague is *bigger* than Brno.', ['big', 'biggest'], 'Praha je větší než Brno.', '🏙️']
+];
+// conversations: [question, answer, wrong answers, Czech question, Czech answer, picture]
+const EN_D3 = [
+  ["What's your name?", 'My name is Maruška.', ["I'm nine.", "I'm fine, thank you."], 'Jak se jmenuješ?', 'Jmenuji se Maruška.', '🙋‍♀️'],
+  ['How old are you?', "I'm nine.", ['My name is Ema.', "It's blue."], 'Kolik je ti let?', 'Je mi devět.', '🎂'],
+  ['How are you?', "I'm fine, thank you.", ["I'm nine.", 'Yes, I can.'], 'Jak se máš?', 'Mám se dobře, děkuji.', '😊'],
+  ['What colour is it?', "It's green.", ["It's a frog.", 'Yes, it is.'], 'Jakou to má barvu?', 'Je zelená.', '🐸'],
+  ["What's this?", "It's a pencil.", ["It's red.", "I'm fine."], 'Co je to?', 'To je tužka.', '✏️'],
+  ['Can you swim?', 'Yes, I can.', ['Yes, I am.', "It's a fish."], 'Umíš plavat?', 'Ano, umím.', '🏊'],
+  ['Is it a dog?', "No, it isn't. It's a cat.", ['Yes, I can.', "No, I'm not."], 'Je to pes?', 'Ne, není. Je to kočka.', '🐱'],
+  ['Do you like apples?', 'Yes, I do.', ['Yes, I am.', 'Yes, it is.'], 'Máš ráda jablka?', 'Ano, mám.', '🍎'],
+  ['How many apples?', 'Five apples.', ['Two apples.', 'Five bananas.'], 'Kolik je jablek?', 'Pět jablek.', '🍎🍎🍎🍎🍎'],
+  ['Where is the ball?', "It's under the chair.", ["It's red.", 'Yes, it is.'], 'Kde je míč?', 'Je pod židlí.', '⚽🪑'],
+  ["What's the weather like?", "It's sunny.", ["It's Monday.", "I'm happy."], 'Jaké je počasí?', 'Je slunečno.', '☀️'],
+  ['What day is it today?', "It's Monday.", ["It's sunny.", "It's a book."], 'Jaký je dnes den?', 'Je pondělí.', '📅'],
+  ['Are you happy?', 'Yes, I am.', ['Yes, I do.', 'Yes, I can.'], 'Jsi šťastná?', 'Ano, jsem.', '😊'],
+  ['Who is she?', "She's my sister.", ["She's nine.", "He's my brother."], 'Kdo je to?', 'To je moje sestra.', '👧'],
+  ['Goodbye!', 'Bye! See you tomorrow!', ['Good morning!', 'Thank you!'], 'Na shledanou!', 'Ahoj, zítra se uvidíme!', '👋']
+];
+const EN_D5 = [
+  ['Can I help you?', "Yes, please. I'd like an ice cream.", ["No, I can't.", "I'm nine."], 'Mohu vám pomoci?', 'Ano, prosím. Chtěla bych zmrzlinu.', '🍦'],
+  ['How much is it?', "It's two pounds.", ["It's two o'clock.", "I've got two."], 'Kolik to stojí?', 'Stojí to dvě libry.', '💷'],
+  ['Excuse me, where is the station?', 'Go straight on and turn left.', ["It's sunny.", 'Yes, it is.'], 'Promiňte, kde je nádraží?', 'Jděte rovně a pak zahněte doleva.', '🚉'],
+  ["What's the matter?", "I've got a headache.", ['Yes, it is.', "It's on the table."], 'Co ti je?', 'Bolí mě hlava.', '🤕'],
+  ['Would you like some tea?', 'Yes, please.', ['Yes, I am.', 'Yes, I do.'], 'Dáš si čaj?', 'Ano, prosím.', '🍵'],
+  ['What time is it?', "It's half past three.", ["It's Monday.", "It's three pounds."], 'Kolik je hodin?', 'Je půl čtvrté.', '🕞'],
+  ['What do you do in your free time?', 'I go horse riding.', ["I'm ten.", "It's in the garden."], 'Co děláš ve volném čase?', 'Jezdím na koni.', '🏇'],
+  ['Where were you yesterday?', "I was at my grandma's.", ['I am at school.', 'Yes, I was.'], 'Kde jsi byla včera?', 'Byla jsem u babičky.', '👵'],
+  ["What's your favourite subject?", 'My favourite subject is art.', ['My favourite colour is red.', "I'm good."], 'Jaký je tvůj oblíbený předmět?', 'Můj oblíbený předmět je výtvarka.', '🎨'],
+  ['Can I borrow your pen, please?', 'Of course. Here you are.', ["No, I'm not.", "It's my pen."], 'Můžu si půjčit tvoje pero, prosím?', 'Jasně. Tady máš.', '🖊️'],
+  ['When is your birthday?', "It's in May.", ["It's at school.", "I'm in May."], 'Kdy máš narozeniny?', 'V květnu.', '🎂'],
+  ["What's the weather like today?", "It's cold and windy.", ["It's Tuesday.", "I'm cold and windy."], 'Jaké je dnes počasí?', 'Je zima a fouká vítr.', '🌬️'],
+  ['Thank you very much!', "You're welcome.", ['Yes, please.', "I'm sorry."], 'Moc děkuji!', 'Není zač.', '🙏'],
+  ['What did you do at the weekend?', 'I went to the cinema.', ['I go to the cinema.', 'At the weekend.'], 'Co jsi dělala o víkendu?', 'Šla jsem do kina.', '🎬'],
+  ['Is there a bank near here?', "Yes, there is. It's next to the post office.", ['Yes, it is.', "No, I haven't."], 'Je tady blízko banka?', 'Ano, je. Je vedle pošty.', '🏦']
+];
+
+/* ---------- angličtina: výběr slovíček a opakování ---------- */
+const EN_PRAISE = ['Great!', 'Well done!', 'Super!', 'Excellent!', 'Perfect!', 'Good job!', 'Brilliant!', "Yes, that's right!"];
+const enSent = it => it[0].replace(/\*/g, '');
+const enLv = () => mmGet('enw', {});
+// how well each word is known (0–5): right answer +1, mistake −2; weak words come back more often
+function enMark(w, ok) { if (!w) return; const S = enLv(), v = S[w] || 0; S[w] = ok ? Math.min(5, v + 1) : Math.max(0, v - 2); mmSet('enw', S); }
+function enL() { if (!L) return { asked: new Set(), retry: [] }; if (!L.en) L.en = { asked: new Set(), retry: [] }; return L.en; }
+// a missed word returns two questions later (asked another way); then words not asked yet, weaker ones more often
+function enPick(list, n, id) {
+  const E = enL(), S = enLv(), at = L ? L.done : 0, out = [];
+  E.retry.forEach(r => { if (out.length < n && r.due <= at) { const it = list.find(x => id(x) === r.id); if (it && !out.includes(it)) out.push(it); } });
+  while (out.length < n) {
+    const cand = list.filter(x => !out.includes(x)); if (!cand.length) break;
+    const fresh = cand.filter(x => !E.asked.has(id(x))), from = fresh.length ? fresh : cand, wt = from.map(x => 6 - (S[id(x)] || 0));
+    let r = Math.random() * wt.reduce((a, b) => a + b, 0), it = from[from.length - 1];
+    for (let i = 0; i < from.length; i++) { r -= wt[i]; if (r <= 0) { it = from[i]; break; } }
+    out.push(it);
+  }
+  return out;
+}
+// wrong options with a different key (and no shared tag, so two phrases that both fit never meet)
+function enOthers(list, target, n, key, tags) {
+  const tg = tags ? (target[4] || '').split(' ').filter(Boolean) : [], used = new Set([key(target)]), res = [];
+  for (const x of czShuffle(list)) {
+    const k = key(x); if (!k || x === target || used.has(k)) continue;
+    if (tg.length && (x[4] || '').split(' ').some(t => tg.includes(t))) continue;
+    used.add(k); res.push(x); if (res.length >= n) break;
+  }
+  return res;
+}
+// shuffled, but never left in the right order
+function enShuf(a) { if (new Set(a).size < 2) return a.slice(); let s; do { s = czShuffle(a); } while (s.join('\u0001') === a.join('\u0001')); return s; }
+const enSayBtn = (t, sp, cls = '') => `<button class="en-word${cls}" data-say="${enEsc(sp || t)}">${enEsc(t)} <span class="spk">🔊</span></button>`;
+const enBigSay = t => `<button class="en-big-say" data-say="${enEsc(t)}" aria-label="Přehrát">🔊</button>`;
+const enAsk = t => `<div class="en-ask">${t}</div>`;
+const enWide = ch => ch.some(c => String(c).length > 16);
+const EN_SPELL_MAX = { 2: 6, 3: 8, 4: 10, 5: 10 };
+const enSpellable = (w, g) => /^[A-Za-z]{3,}$/.test(w[1]) && w[1].length <= (EN_SPELL_MAX[g] || 0);
+
+/* ---------- angličtina: druhy úloh ---------- */
+// one word or phrase: hear it, see it, translate it or put it together from letters
+function enWordQ(type, w, list, o = {}) {
+  const [pic, en, cz] = w, sp = w[3] || en, tags = !!o.tags;
+  const q = { en: true, type, key: type + ':' + en, enId: en, enWord: en, sayOk: sp, explain: `${pic ? enPic(pic) + ' ' : ''}<b>${enEsc(en)}</b> = ${cz}` };
+  const others = (n, key) => enOthers(list, w, n, key, tags).map(key);
+  if (type === 'listen' || type === 'en2pic') {
+    const pics = [pic, ...enOthers(list.filter(x => x[0]), w, 3, x => x[0], tags).map(x => x[0])];
+    return Object.assign(q, { q: (type === 'listen' ? enBigSay(sp) : enSayBtn(en, sp)) + enAsk(type === 'listen' ? 'Poslouchej a ťukni na správný obrázek' : 'Ťukni na správný obrázek'),
+      a: pic, choices: czShuffle(pics), pics: true, say: sp, hint: type === 'listen' ? 'Poslechni si to ještě jednou – pomalu.' : `Česky to začíná na „${cz.slice(0, 2)}…“` });
+  }
+  if (type === 'pic2en' || type === 'cz2en') {
+    const ch = czShuffle([en, ...others(2, x => x[1])]);
+    return Object.assign(q, { q: (type === 'pic2en' ? `<div class="en-pic">${enPic(pic)}</div>` : `<div class="en-cz big">${cz}</div>`) + enAsk('Jak se to řekne anglicky?'),
+      a: en, choices: ch, wide: enWide(ch), hint: `Začíná na „${en[0]}“.` });
+  }
+  if (type === 'en2cz' || type === 'l2cz') {
+    const ch = czShuffle([cz, ...others(2, x => x[2])]);
+    return Object.assign(q, { q: (type === 'l2cz' ? enBigSay(sp) : enSayBtn(en, sp)) + enAsk(type === 'l2cz' ? 'Poslouchej. Co to znamená česky?' : 'Co to znamená česky?'),
+      a: cz, choices: ch, wide: enWide(ch), say: sp, hint: type === 'l2cz' ? 'Poslechni si to ještě jednou – pomalu.' : `Česky to začíná na „${cz.slice(0, 2)}…“` });
+  }
+  const parts = en.split('');
+  return Object.assign(q, { q: (pic ? `<div class="en-pic sm">${enPic(pic)}</div>` : '') + `<div class="en-cz">${cz}</div>` + enAsk('Slož anglické slovo z písmen'),
+    tiles: enShuf(parts), parts, need: parts.length, mode: 'spell', a: en, filled: en, hint: `Začíná na „${en[0]}“ a má ${en.length} ${czPism(en.length)}.` });
+}
+// four pairs: English word ↔ picture (or Czech word)
+function enMatchQ(list, pic) {
+  const usePic = pic && list.filter(x => x[0]).length >= 4, pool = usePic ? list.filter(x => x[0]) : list, ws = enPick(pool, Math.min(4, pool.length), x => x[1]);
+  return { en: true, type: 'match', key: 'match:' + ws.map(w => w[1]).sort().join('|'), a: '', pairs: ws.map(w => [w[1], usePic ? w[0] : w[2], w[3] || w[1]]), pairPics: usePic, enWords: ws.map(w => w[1]),
+    q: enAsk(usePic ? 'Spoj slovíčko s obrázkem' : 'Spoj anglické slovo s českým'), hint: 'Ťukni na anglické slovo – appka ti ho přečte. Pak najdi jeho dvojici.',
+    explain: ws.map(w => `${w[0] ? enPic(w[0]) + ' ' : ''}<b>${enEsc(w[1])}</b> = ${w[2]}`).join('<br>') };
+}
+function enCountQ(list) {
+  const w = enPick(list, 1, x => x[1])[0], n = +w[0], e = pk(['🐞', '⭐', '🍎', '🐟', '🌸', '🎈', '🐥', '🦋', '🐴']);
+  return { en: true, type: 'count', key: 'count:' + w[1], enId: w[1], enWord: w[1], sayOk: w[1], q: `<div class="en-count">${Array(n).fill(e).join('')}</div>` + enSayBtn('How many?', '', ' sent'),
+    a: w[1], choices: czShuffle([w[1], ...enOthers(list, w, 2, x => x[1]).map(x => x[1])]), say: 'How many?', hint: 'Spočítej je po jednom: one, two, three…', explain: `${n} = <b>${w[1]}</b> (${w[2]})` };
+}
+function enColourQ() {
+  const [e, c, no] = pk(EN_COLOUR_OF), w = EN_COLOURS.find(x => x[1] === c);
+  return { en: true, type: 'colour', key: 'colour:' + e, enId: c, enWord: c, q: `<div class="en-pic">${enPic(e)}</div>` + enSayBtn('What colour is it?', '', ' sent'),
+    a: c, choices: czShuffle([c, ...enOthers(EN_COLOURS.filter(x => !no.includes(x[1])), w, 2, x => x[1]).map(x => x[1])]), say: 'What colour is it?', sayOk: `It's ${c}.`,
+    hint: 'What colour = jakou barvu. Jakou barvu to má?', explain: `${enPic(w[0])} It's <b>${c}</b>. (${w[2]})` };
+}
+// what comes next: days of the week, months
+function enNextQ(list) {
+  const i = ri(0, list.length - 1), w = list[i], nx = list[(i + 1) % list.length];
+  return { en: true, type: 'next', key: 'next:' + w[1], enId: nx[1], enWord: nx[1], q: enAsk('Co následuje po…') + enSayBtn(w[1]) + enAsk(`${w[2]} → ?`), a: nx[1],
+    choices: czShuffle([nx[1], ...enOthers(list.filter(x => x !== w), nx, 2, x => x[1]).map(x => x[1])]), say: w[1], sayOk: `${w[1]}, ${nx[1]}`,
+    hint: `Česky: ${w[2]} → ${nx[2]}`, explain: `${w[1]} → <b>${nx[1]}</b> (${w[2]} → ${nx[2]})` };
+}
+function enSeasonQ() {
+  const mi = +pk(Object.keys(EN_MONTH_SEASON)), m = EN_MONTHS[mi], s = EN_SEASONS[EN_MONTH_SEASON[mi]];
+  return { en: true, type: 'season', key: 'season:' + m[1], enId: s[1], enWord: s[1], q: enSayBtn(m[1]) + enAsk('Ve kterém ročním období je tento měsíc?'), a: s[1], choices: EN_SEASONS.map(x => x[1]),
+    say: m[1], sayOk: `${m[1]} is in ${s[1]}.`, hint: `${m[1]} = ${m[2]}`, explain: `${m[1]} (${m[2]}) → ${enPic(s[0])} <b>${s[1]}</b> (${s[2]})` };
+}
+// words that a Czech child could take for the opposite, too (vysoký × malý, těžký = heavy i difficult)
+const EN_OPP_NOT = { tall: ['small'], small: ['tall'], heavy: ['easy'], easy: ['heavy'], light: ['difficult'], difficult: ['light'] };
+function enOppQ() {
+  const p = pk(EN_OPP), [a, b] = Math.random() < .5 ? p : [p[1], p[0]];
+  const bad = new Set([...EN_OPP.filter(x => x.includes(a)).flat(), ...(EN_OPP_NOT[a] || [])]), pool = [...new Set(EN_OPP.flat())].filter(x => !bad.has(x));
+  return { en: true, type: 'opp', key: 'opp:' + a, enId: a, q: enAsk('Co je opakem tohoto slova?') + enSayBtn(a), a: b, choices: czShuffle([b, ...czShuffle(pool).slice(0, 2)]), say: a, sayOk: `${a}, ${b}`,
+    hint: `${a} = ${EN_OPP_CZ[a]}`, explain: `<b>${a}</b> × <b>${b}</b> (${EN_OPP_CZ[a]} × ${EN_OPP_CZ[b]})` };
+}
+// a sum read in English: "What is seven plus five?" → twelve
+function enSumQ(a, b, opts) {
+  const r = a + b, W = enNum, ask = `What is ${W(a)} plus ${W(b)}?`;
+  return { en: true, type: 'sum', key: `sum:${a}+${b}`, enId: W(r), enWord: W(r), q: enSayBtn(`${a} + ${b} = ?`, ask, ' sent') + enAsk('Vyber výsledek anglicky'), a: W(r),
+    choices: czShuffle(opts.map(W)), say: ask, sayOk: `${W(a)} plus ${W(b)} is ${W(r)}.`, hint: `${a} + ${b} = ${r}`, explain: `${W(a)} + ${W(b)} = <b>${W(r)}</b> (${a} + ${b} = ${r})` };
+}
+function enSum20Q() {
+  const r = ri(11, 20), a = ri(Math.max(1, r - 10), Math.min(10, r - 1)), o = new Set([r]);
+  while (o.size < 3) o.add(ri(11, 20));
+  return enSumQ(a, r - a, [...o]);
+}
+// numbers that are easy to mix up: thirteen × thirty, forty-five × fifty-four…
+function enNumConf(n) {
+  const c = [];
+  if (n >= 13 && n <= 19) c.push((n - 10) * 10, n < 19 ? n + 1 : n - 1);
+  else if (n % 10 === 0) c.push(n === 100 ? 10 : n === 20 ? 12 : n / 10 + 10, n < 100 ? n + 10 : 90);
+  else { const rev = (n % 10) * 10 + Math.floor(n / 10); c.push(rev !== n ? rev : n - 10, (n + 1) % 10 ? n + 1 : n - 1); }
+  const out = [...new Set(c.filter(x => x !== n && x >= 1 && x <= 100))];
+  while (out.length < 2) { const x = ri(13, 99); if (x !== n && !out.includes(x)) out.push(x); }
+  return out.slice(0, 2);
+}
+function enN100Q(t) {
+  if (t === 'sum') { const a = ri(1, 8) * 10, b = ri(1, 10 - a / 10) * 10; return enSumQ(a, b, [a + b, ...enNumConf(a + b)]); }
+  const x = Math.random(), n = x < .25 ? ri(13, 19) : x < .45 ? ri(2, 10) * 10 : ri(21, 99), W = enNum(n), conf = enNumConf(n);
+  const hint = n >= 13 && n <= 19 ? 'Slyšíš na konci -teen (13–19)? Desítky končí na -ty.' : n % 10 ? 'Nejdřív desítky, pak jednotky.' : 'Desítky končí na -ty: twenty, thirty, forty…';
+  const q = { en: true, type: t, key: `${t}:${n}`, enId: W, enWord: W, sayOk: W, hint, explain: `<b>${n}</b> = ${W}` };
+  if (t === 'l2num') return Object.assign(q, { q: enBigSay(W) + enAsk('Poslouchej. Které číslo slyšíš?'), a: String(n), choices: czShuffle([n, ...conf].map(String)), say: W });
+  if (t === 'num2en') return Object.assign(q, { q: `<div class="en-pic">${enPic(String(n))}</div>` + enAsk('Jak se to číslo řekne anglicky?'), a: W, choices: czShuffle([n, ...conf].map(enNum)) });
+  return Object.assign(q, { q: enSayBtn(W) + enAsk('Napiš to číslo číslicemi'), a: n, say: W });
+}
+// telling the time
+function enTimeText(h, m) { const w = x => EN_NUM_W[x]; return m === 0 ? `It's ${w(h)} o'clock.` : m === 30 ? `It's half past ${w(h)}.` : m === 15 ? `It's quarter past ${w(h)}.` : `It's quarter to ${w(h % 12 + 1)}.`; }
+const enDig = (h, m) => `${h}:${String(m).padStart(2, '0')}`;
+function enTimeQ(t) {
+  const h = ri(1, 12), m = pk([0, 30, 15, 45, 0, 30]), txt = enTimeText(h, m), dig = enDig(h, m);
+  // the same clock read another way, or the usual mix-ups (half past three is 3:30, not 2:30)
+  const seen = new Set([dig]), alt = czShuffle([[h, (m + 30) % 60], [h, m === 15 ? 45 : 15], [h === 1 ? 12 : h - 1, m], [h % 12 + 1, m]])
+    .filter(([a, b]) => { const k = enDig(a, b); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 2), all = [[h, m], ...alt];
+  const q = { en: true, type: t, key: `${t}:${dig}`, sayOk: txt, explain: `${clockSvg(h, m)}<b>${txt}</b> = ${dig}` };
+  if (t === 'clk2en') { const ch = czShuffle(all.map(([a, b]) => enTimeText(a, b))); return Object.assign(q, { q: clockSvg(h, m) + enAsk('What time is it? Kolik je hodin?'), a: txt, choices: ch, wide: true,
+    hint: 'Velká ručička na 12 = o\'clock, na 6 = half past, na 3 = quarter past, na 9 = quarter to.' }); }
+  if (t === 'en2clk') return Object.assign(q, { q: enSayBtn(txt, '', ' sent') + enAsk('Ťukni na správné hodiny'), a: `clk:${h}:${m}`, choices: czShuffle(all.map(([a, b]) => `clk:${a}:${b}`)), pics: true, say: txt,
+    hint: 'half past = velká ručička na 6, quarter past = na 3, quarter to = na 9, o\'clock = na 12.' });
+  return Object.assign(q, { q: enBigSay(txt) + enAsk('Poslouchej. Kolik je hodin?'), a: dig, choices: czShuffle(all.map(([a, b]) => enDig(a, b))), say: txt,
+    hint: 'half past = :30, quarter past = :15, quarter to = :45 (o hodinu dřív).' });
+}
+// a sentence: fill in the missing word, put it together from words, or say what it means
+function enSentQ(t, it, list, g) {
+  const [raw, wrongs, cz, pic, note] = it, gap = raw.match(/\*(.+?)\*/)[1], full = enSent(it), picH = pic ? `<div class="en-pic sm">${enPic(pic)}</div>` : '';
+  const q = { en: true, type: t, key: t + ':' + full, enId: full, sayOk: full, explain: `<b>${enEsc(full)}</b><br>${cz}${note ? `<br><i>${note}</i>` : ''}` };
+  if (t === 'gap') return Object.assign(q, { q: picH + `<span class="cz-q en-s">${czGap(enEsc(raw.replace(/\*.+?\*/, '_')))}</span><div class="en-cz">${cz}</div>`, a: gap, choices: czShuffle([gap, ...wrongs]), filled: full,
+    hint: note || 'Přečti si českou větu. Které slovo do mezery patří?' });
+  // other meanings must not contain this one („Je to kočka?“ × „Je to kočka? Ano, je.“)
+  if (t === 'meaning') { const ch = czShuffle([cz, ...enOthers(list.filter(x => x === it || (!x[2].includes(cz) && !cz.includes(x[2]))), it, 2, x => x[2]).map(x => x[2])]); return Object.assign(q, { q: enSayBtn(full, '', ' sent') + enAsk('Co ta věta znamená?'), a: cz, choices: ch, wide: true, say: full,
+    hint: 'Poslechni si větu ještě jednou a hledej slovíčka, která znáš.' }); }
+  const m = full.match(/^(.*?)([.!?]?)$/), parts = m[1].split(' ');
+  // from 3rd grade one wrong word is mixed in (am × is, can × can't…)
+  const extra = t === 'build' && g >= 3 ? wrongs.filter(x => !x.includes(' ') && !parts.some(p => p.toLowerCase() === x.toLowerCase())).slice(0, 1) : [];
+  return Object.assign(q, { q: t === 'build' ? picH + `<div class="en-cz">${cz}</div>` + enAsk('Slož tu větu anglicky') : enBigSay(full) + enAsk('Poslouchej a slož větu'),
+    tiles: enShuf(parts.concat(extra)), parts, need: parts.length, end: m[2], mode: 'build', a: full, filled: full, say: t === 'lbuild' ? full : '',
+    hint: t === 'build' ? `Věta začíná slovem „${parts[0]}“.` : `Česky: ${cz}` });
+}
+// a conversation: choose the answer, say what the question means, or build the answer
+function enDialQ(t, it, list) {
+  const [qe, ae, wr, qc, ac, pic] = it, picH = pic ? `<div class="en-pic sm">${enPic(pic)}</div>` : '';
+  const q = { en: true, type: t, key: t + ':' + qe, enId: qe, explain: `${enEsc(qe)} – <b>${enEsc(ae)}</b><br>${qc} – ${ac}` };
+  if (t === 'qmean') return Object.assign(q, { q: enSayBtn(qe, '', ' sent') + enAsk('Co to znamená?'), a: qc, choices: czShuffle([qc, ...enOthers(list, it, 2, x => x[3]).map(x => x[3])]), wide: true, say: qe, sayOk: qe,
+    hint: 'Poslechni si otázku ještě jednou – pomalu.' });
+  if (t === 'abuild') { const m = ae.match(/^(.*?)([.!?]?)$/), parts = m[1].split(' '); return Object.assign(q, { q: picH + enSayBtn(qe, '', ' sent') + `<div class="en-cz">${ac}</div>` + enAsk('Slož odpověď anglicky'),
+    tiles: enShuf(parts), parts, need: parts.length, end: m[2], mode: 'build', a: ae, filled: ae, say: qe, sayOk: ae, hint: `Odpověď začíná slovem „${parts[0]}“.` }); }
+  return Object.assign(q, { q: picH + enSayBtn(qe, '', ' sent') + enAsk('Co odpovíš?'), a: ae, choices: czShuffle([ae, ...wr]), wide: true, say: qe, sayOk: ae, hint: `Otázka znamená: ${qc}` });
+}
+function enSitQ(it, list) {
+  const [pic, en, cz, , , sit] = it;
+  return { en: true, type: 'sit', key: 'sit:' + en, enId: en, enWord: en, sayOk: en, q: `<div class="en-pic sm">${enPic(pic)}</div><div class="en-sit">${sit}</div>`, a: en,
+    choices: czShuffle([en, ...enOthers(list, it, 2, x => x[1], true).map(x => x[1])]), wide: true, hint: `Česky bys řekla: ${cz}`, explain: `<b>${enEsc(en)}</b> = ${cz}` };
+}
+
+/* ---------- angličtina: plán lekce (10 úloh od poznávání po skládání) ---------- */
+const enUnseen = q => !L || !L.seen.has(q.key);
+const enTry = (f, n = 6) => { let q; for (let k = 0; k < n; k++) { q = f(); if (enUnseen(q)) break; } return q; };
+const enSlot = (plan, any) => L && L.topic ? plan[L.done % plan.length] : pk(any || plan);
+const EN_PLAN_V = {
+  1: ['listen', 'pic2en', 'en2pic', 'match', 'xtra', 'listen', 'en2pic', 'pic2en', 'xtra', 'match'],
+  2: ['listen', 'pic2en', 'en2pic', 'match', 'xtra', 'cz2en', 'spell', 'listen', 'match', 'spell'],
+  3: ['pic2en', 'listen', 'cz2en', 'match', 'spell', 'xtra', 'en2cz', 'spell', 'match', 'cz2en']
+};
+const EN_TYPES = { 1: ['listen', 'en2pic', 'pic2en'], 2: ['listen', 'en2pic', 'pic2en', 'cz2en', 'spell'], 3: ['listen', 'en2pic', 'pic2en', 'cz2en', 'en2cz', 'spell'] };
+// adapt the type to the word: no picture → via Czech, too long to spell → choose, sound off → read
+function enFit(t, w, g, noPic) {
+  if (t === 'spell' && !enSpellable(w, g)) t = 'pic2en';
+  if (t === 'listen' && !canHear()) t = 'en2pic';
+  if (!w[0] || noPic) t = ({ listen: 'l2cz', en2pic: 'en2cz', pic2en: 'cz2en' })[t] || t;
+  return t;
+}
+// o.noPic: the pictures only illustrate (they could fit several words), so ask via Czech instead
+// o.pool(word): the words the wrong options come from (seasons only among seasons…)
+function enVocab(list, extra, o = {}) {
+  return function () {
+    const g = Math.min(this.grade, 3), types = EN_TYPES[g], pool = w => o.pool ? o.pool(w) : list;
+    let slot = enSlot(EN_PLAN_V[g], [...types, 'match', extra ? 'xtra' : 'pic2en']);
+    if (slot === 'xtra') { if (extra) return enTry(() => extra(list)); slot = pk(['pic2en', 'en2pic']); }
+    if (slot === 'match') return enTry(() => enMatchQ(list, !o.noPic && (g <= 2 || Math.random() < .5)), 4);
+    const ws = enPick(list, 3, x => x[1]);
+    for (const w of ws) for (const t of [slot, ...czShuffle(types)]) { const q = enWordQ(enFit(t, w, this.grade, o.noPic), w, pool(w)); if (enUnseen(q)) return q; }
+    return enWordQ(enFit(slot, ws[0], this.grade, o.noPic), ws[0], pool(ws[0]));
+  };
+}
+const EN_PLAN_S = ['gap', 'build', 'gap', 'meaning', 'build', 'gap', 'lbuild', 'build', 'gap', 'build'];
+function enSentences(list) {
+  return function () {
+    const g = this.grade; let slot = enSlot(EN_PLAN_S);
+    if (slot === 'lbuild' && (g < 3 || !canHear())) slot = 'build';
+    const its = enPick(list, 3, enSent);
+    for (const it of its) for (const t of [slot, 'gap', 'build', 'meaning']) { if (t === 'meaning' && g < 2) continue; const q = enSentQ(t, it, list, g); if (enUnseen(q)) return q; }
+    return enSentQ(slot === 'meaning' && g < 2 ? 'gap' : slot, its[0], list, g);
+  };
+}
+const EN_PLAN_D = ['answer', 'answer', 'qmean', 'answer', 'abuild', 'answer', 'qmean', 'answer', 'abuild', 'answer'];
+function enDialog(list) {
+  return function () {
+    const g = this.grade, slot = enSlot(EN_PLAN_D), its = enPick(list, 3, x => x[0]);
+    for (const it of its) for (const t of [slot, 'answer', 'qmean']) { if (t === 'abuild' && (g < 4 || it[1].split(' ').length > 8)) continue; const q = enDialQ(t, it, list); if (enUnseen(q)) return q; }
+    return enDialQ('answer', its[0], list);
+  };
+}
+const EN_PLAN_P = ['sit', 'en2cz', 'sit', 'match', 'cz2en', 'sit', 'l2cz', 'sit', 'match', 'sit'];
+function enPhrases(list) {
+  return function () {
+    let slot = enSlot(EN_PLAN_P);
+    if (slot === 'match') return enTry(() => enMatchQ(list, false), 4);
+    if (slot === 'l2cz' && !canHear()) slot = 'en2cz';
+    const its = enPick(list, 3, x => x[1]);
+    for (const it of its) for (const t of [slot, 'sit', 'en2cz', 'cz2en']) { const q = t === 'sit' ? enSitQ(it, list) : enWordQ(t, it, list, { tags: true }); if (enUnseen(q)) return q; }
+    return enSitQ(its[0], list);
+  };
+}
+const EN_PLAN_T = ['clk2en', 'en2clk', 'clk2en', 'l2dig', 'en2clk', 'clk2en', 'l2dig', 'en2clk', 'clk2en', 'l2dig'];
+function enClock() { return function () { let t = enSlot(EN_PLAN_T); if (t === 'l2dig' && !canHear()) t = 'clk2en'; return enTry(() => enTimeQ(t), 8); }; }
+const EN_PLAN_N = ['l2num', 'num2en', 'en2num', 'l2num', 'sum', 'num2en', 'en2num', 'l2num', 'num2en', 'sum'];
+function enNum100() { return function () { let t = enSlot(EN_PLAN_N); if (t === 'l2num' && !canHear()) t = 'num2en'; return enTry(() => enN100Q(t), 8); }; }
+// examples on the learn card
+const enEx = list => list.filter((_, i) => i % 2 === 0).slice(0, 6).map(it => [enSent(it), it[2]]);
+const enExD = list => list.slice(0, 6).map(d => [`${d[0]} – ${d[1]}`, `${d[3]} – ${d[4]}`]);
+
+TOPICS.push(
+  // ---------- 1. třída ----------
+  { subj: 'en', kind: 'v', id: 'e1-colours', grade: 1, ico: '🎨', name: 'Barvy', en: 'Colours', words: EN_COLOURS, gen: enVocab(EN_COLOURS, () => enColourQ()),
+    learn: '<p>Barva se v angličtině nemění: <b>a red apple</b>, <b>a red car</b>, <b>a red dress</b> – pořád <b>red</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e1-numbers', grade: 1, ico: '🔢', name: 'Čísla 1–10', en: 'Numbers', words: EN_NUM1, gen: enVocab(EN_NUM1, list => enCountQ(list)),
+    learn: '<p>Počítej nahlas na prstech: <b>one, two, three…</b> až do <b>ten</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e1-animals', grade: 1, ico: '🐶', name: 'Zvířátka', en: 'Animals', words: EN_ANIMALS, gen: enVocab(EN_ANIMALS),
+    learn: '<p>Před zvířátkem říkáme <b>a</b> (jedno): <b>a cat, a dog</b>. Když jich je víc: <b>two cats</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e1-toys', grade: 1, ico: '🧸', name: 'Hračky', en: 'Toys', words: EN_TOYS, gen: enVocab(EN_TOYS),
+    learn: '<p>Kterou hračku máš nejradši? Řekni to anglicky: <b>I like my teddy bear.</b></p>' },
+  { subj: 'en', kind: 'v', id: 'e1-fruit', grade: 1, ico: '🍎', name: 'Ovoce', en: 'Fruit', words: EN_FRUIT, gen: enVocab(EN_FRUIT),
+    learn: '<p>Před slovem, které začíná na <b>a, e, i, o, u</b>, říkáme <b>an</b>: <b>an apple, an orange</b>. Jinak <b>a</b>: <b>a banana</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e1-family', grade: 1, ico: '👪', name: 'Rodina', en: 'Family', words: EN_FAMILY, gen: enVocab(EN_FAMILY),
+    learn: '<p><b>Mum</b> a <b>dad</b> – tak říkají anglické děti mamince a tatínkovi.</p>' },
+  { subj: 'en', kind: 'p', id: 'e1-hello', grade: 1, ico: '👋', name: 'Pozdravy a kouzelná slovíčka', en: 'Hello!', words: EN_HELLO, gen: enPhrases(EN_HELLO),
+    learn: '<p><b>Hello</b> na pozdrav, <b>Goodbye</b> při loučení. Kouzelná slovíčka: <b>please</b> (prosím) a <b>thank you</b> (děkuji).</p>' },
+  { subj: 'en', kind: 's', id: 'e1-its', grade: 1, ico: '🧩', name: 'První věty', en: "It's a cat.", gen: enSentences(EN_S1), examples: () => enEx(EN_S1),
+    learn: "<p><b>It's</b> = <b>it is</b> = to je. <b>It's a cat.</b> – To je kočka. <b>It's red.</b> – Je červená.</p><p><b>I like apples.</b> – Mám ráda jablka.</p>" },
+  // ---------- 2. třída ----------
+  { subj: 'en', kind: 'v', id: 'e2-school', grade: 2, ico: '🎒', name: 'Ve škole', en: 'At school', words: EN_SCHOOL, gen: enVocab(EN_SCHOOL),
+    learn: '<p>Co máš ve školní tašce? <b>A pen, a pencil, a ruler…</b></p>' },
+  { subj: 'en', kind: 'v', id: 'e2-body', grade: 2, ico: '👀', name: 'Moje tělo', en: 'My body', words: EN_BODY, gen: enVocab(EN_BODY),
+    learn: '<p>Ukazuj na sebe a říkej: <b>This is my nose. This is my mouth.</b> Jedno oko je <b>eye</b>, obě oči <b>eyes</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e2-food', grade: 2, ico: '🍕', name: 'Jídlo a pití', en: 'Food and drink', words: EN_FOOD, gen: enVocab(EN_FOOD),
+    learn: "<p><b>I like pizza.</b> – Mám ráda pizzu. <b>I don't like milk.</b> – Nemám ráda mléko.</p>" },
+  { subj: 'en', kind: 'v', id: 'e2-clothes', grade: 2, ico: '👕', name: 'Oblečení', en: 'Clothes', words: EN_CLOTHES, gen: enVocab(EN_CLOTHES),
+    learn: '<p><b>Trousers</b> (kalhoty) jsou i anglicky v množném čísle. Páry věcí také: <b>shoes, socks, gloves</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e2-numbers', grade: 2, ico: '🔟', name: 'Čísla 11–20', en: 'Numbers 11–20', words: EN_NUM2, gen: enVocab(EN_NUM2, () => enSum20Q()),
+    learn: '<p>Čísla 13–19 končí na <b>-teen</b>: thir<b>teen</b>, four<b>teen</b>… <b>Eleven</b> (11) a <b>twelve</b> (12) se musíš naučit zpaměti.</p>' },
+  { subj: 'en', kind: 'p', id: 'e2-class', grade: 2, ico: '🗣️', name: 'Pokyny ve třídě', en: 'Stand up!', words: EN_CLASS, gen: enVocab(EN_CLASS),
+    learn: '<p>Takhle mluví paní učitelka v hodině angličtiny. Poslouchej a ukaž, co máš udělat.</p>' },
+  { subj: 'en', kind: 's', id: 'e2-like', grade: 2, ico: '👍', name: 'Mám ráda, nemám ráda', en: "I like… I don't like…", gen: enSentences(EN_S2A), examples: () => enEx(EN_S2A),
+    learn: "<p><b>I like…</b> = mám rád/ráda. <b>I don't like…</b> = nemám rád/ráda.</p><p>Otázka: <b>Do you like…?</b> Odpověď: <b>Yes, I do.</b> / <b>No, I don't.</b></p>" },
+  { subj: 'en', kind: 's', id: 'e2-this', grade: 2, ico: '🙋‍♀️', name: 'To je moje… Mám…', en: "This is my… I've got…", gen: enSentences(EN_S2B), examples: () => enEx(EN_S2B),
+    learn: "<p><b>This is my…</b> = to je můj/moje… <b>I've got…</b> = mám… (<b>I've got</b> = <b>I have got</b>).</p><p><b>Is it a…?</b> – <b>Yes, it is.</b> / <b>No, it isn't.</b></p>" },
+  // ---------- 3. třída ----------
+  { subj: 'en', kind: 'v', id: 'e3-wild', grade: 3, ico: '🦁', name: 'Divoká zvířata', en: 'Wild animals', words: EN_WILD, gen: enVocab(EN_WILD),
+    learn: '<p>Pozor na <b>an</b> před samohláskou: <b>an elephant</b>. Ostatní: <b>a lion, a monkey</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e3-home', grade: 3, ico: '🏠', name: 'Můj domov', en: 'My home', words: EN_HOUSE, gen: enVocab(EN_HOUSE),
+    learn: '<p>Ukazuj doma na věci a říkej: <b>This is a bed. This is a door.</b></p>' },
+  { subj: 'en', kind: 'v', id: 'e3-days', grade: 3, ico: '📅', name: 'Dny v týdnu', en: 'Days of the week', words: EN_DAYS, gen: enVocab(EN_DAYS, () => enNextQ(EN_DAYS)),
+    learn: '<p>Dny v týdnu píšeme anglicky vždycky s <b>velkým písmenem</b>: Monday, Tuesday… <b>on Monday</b> = v pondělí.</p>' },
+  { subj: 'en', kind: 'v', id: 'e3-weather', grade: 3, ico: '🌦️', name: 'Počasí', en: 'Weather', words: EN_WEATHER, gen: enVocab(EN_WEATHER),
+    learn: "<p><b>What's the weather like?</b> – Jaké je počasí? <b>It's sunny.</b> – Je slunečno.</p>" },
+  { subj: 'en', kind: 'v', id: 'e3-acts', grade: 3, ico: '🏊', name: 'Co umím dělat', en: 'Actions', words: EN_ACTS, gen: enVocab(EN_ACTS),
+    learn: "<p><b>I can swim.</b> – Umím plavat. <b>I can't ski.</b> – Neumím lyžovat.</p>" },
+  { subj: 'en', kind: 'v', id: 'e3-feel', grade: 3, ico: '😊', name: 'Pocity', en: 'Feelings', words: EN_FEEL, gen: enVocab(EN_FEEL),
+    learn: "<p><b>How are you?</b> – <b>I'm happy.</b> (Jsem šťastná.) <b>I'm tired.</b> (Jsem unavená.)</p><p>Pozor: <b>I'm cold.</b> = je mi zima, <b>I'm hot.</b> = je mi horko.</p>" },
+  { subj: 'en', kind: 's', id: 'e3-can', grade: 3, ico: '🐦', name: 'Umím, neumím', en: "can / can't", gen: enSentences(EN_S3A), examples: () => enEx(EN_S3A),
+    learn: "<p><b>can</b> = umím, můžu. <b>can't</b> = neumím, nemůžu.</p><p><b>Can</b> se nemění: I can, she can, a bird can. Otázka: <b>Can you…?</b> – <b>Yes, I can.</b> / <b>No, I can't.</b></p>" },
+  { subj: 'en', kind: 's', id: 'e3-be', grade: 3, ico: '🙋', name: 'Já jsem, ty jsi', en: 'am / is / are', gen: enSentences(EN_S3B), examples: () => enEx(EN_S3B),
+    learn: "<p><b>I am</b> (I'm), <b>you are</b> (you're), <b>he / she / it is</b> (he's, she's, it's), <b>we are</b>, <b>they are</b>.</p><p>Jedna věc → <b>is</b>, víc věcí → <b>are</b> (ale <b>I am</b>, <b>you are</b>).</p>" },
+  { subj: 'en', kind: 's', id: 'e3-where', grade: 3, ico: '📦', name: 'Kde to je?', en: 'in / on / under', gen: enSentences(EN_S3C), examples: () => enEx(EN_S3C),
+    learn: "<p><b>in</b> = v · <b>on</b> = na · <b>under</b> = pod · <b>next to</b> = vedle · <b>between</b> = mezi</p><p><b>Where is the cat?</b> – Kde je kočka? <b>It's under the bed.</b></p>" },
+  { subj: 'en', kind: 'd', id: 'e3-qa', grade: 3, ico: '💬', name: 'Otázky a odpovědi', en: 'Questions', gen: enDialog(EN_D3), examples: () => enExD(EN_D3),
+    learn: '<p>Poslechni si otázku a vyber, co bys odpověděla. Odpověď musí sedět k otázce: <b>Can you…?</b> – <b>Yes, I can.</b> <b>Do you…?</b> – <b>Yes, I do.</b> <b>Are you…?</b> – <b>Yes, I am.</b></p>' },
+  // ---------- 4. třída ----------
+  { subj: 'en', kind: 'v', id: 'e4-day', grade: 4, ico: '⏰', name: 'Můj den', en: 'My day', words: EN_ROUTINE, gen: enVocab(EN_ROUTINE),
+    learn: '<p><b>I get up at seven.</b> – Vstávám v sedm. <b>I go to bed at nine.</b> – Chodím spát v devět.</p>' },
+  { subj: 'en', kind: 'v', id: 'e4-sport', grade: 4, ico: '⚽', name: 'Sporty a koníčky', en: 'Sports and hobbies', words: EN_SPORT, gen: enVocab(EN_SPORT),
+    learn: '<p><b>I play</b> football, tennis… (hry s míčem). <b>I go</b> swimming, skiing, cycling, horse riding.</p><p>Ale: <b>I like reading.</b> <b>I play the piano.</b></p>' },
+  { subj: 'en', kind: 'v', id: 'e4-town', grade: 4, ico: '🏙️', name: 'Ve městě', en: 'In town', words: EN_TOWN, gen: enVocab(EN_TOWN),
+    learn: '<p><b>Where is the station?</b> – Kde je nádraží? <b>I go to the cinema.</b> – Chodím do kina.</p>' },
+  { subj: 'en', kind: 'v', id: 'e4-jobs', grade: 4, ico: '👩‍⚕️', name: 'Povolání', en: 'Jobs', words: EN_JOBS, gen: enVocab(EN_JOBS),
+    learn: '<p>Před povoláním říkáme <b>a</b>: <b>My mum is a doctor.</b> – Moje maminka je lékařka. Před samohláskou <b>an</b>: <b>an astronaut</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e4-months', grade: 4, ico: '🗓️', name: 'Měsíce a roční období', en: 'Months and seasons', words: [...EN_SEASONS, ...EN_MONTHS],
+    gen: enVocab([...EN_SEASONS, ...EN_MONTHS], () => Math.random() < .5 ? enNextQ(EN_MONTHS) : enSeasonQ(), { pool: w => w[0] ? EN_SEASONS : EN_MONTHS }),
+    learn: '<p>Měsíce píšeme s velkým písmenem: <b>January, February…</b> Roční období malým: <b>spring, summer, autumn, winter</b>.</p><p><b>in May</b> = v květnu, <b>in summer</b> = v létě.</p>' },
+  { subj: 'en', kind: 't', id: 'e4-time', grade: 4, ico: '🕒', name: 'Kolik je hodin?', en: 'What time is it?', gen: enClock(),
+    examples: () => [[3, 0], [3, 30], [3, 15], [3, 45], [7, 30], [12, 0]].map(([h, m]) => [enTimeText(h, m), enDig(h, m), `clk:${h}:${m}`]),
+    learn: "<p><b>o'clock</b> = celá hodina: 3:00 – <b>three o'clock</b>.</p><p><b>half past</b> = půl: 3:30 – <b>half past three</b> (česky půl čtvrté!).</p><p><b>quarter past</b> = 3:15, <b>quarter to</b> = 3:45 – <b>quarter to four</b>.</p>" },
+  { subj: 'en', kind: 's', id: 'e4-likes', grade: 4, ico: '🎾', name: 'On hraje, ona čte', en: 'he plays, she reads', gen: enSentences(EN_S4A), examples: () => enEx(EN_S4A),
+    learn: "<p>U <b>he, she, it</b> přidáváme k slovesu <b>-s</b>: I play → she play<b>s</b>. Po s, sh, ch, o přidáme <b>-es</b>: watch<b>es</b>, go<b>es</b>.</p><p>Zápor: <b>I don't like</b>, <b>she doesn't like</b>. Otázka: <b>Do you…? Does she…?</b></p>" },
+  { subj: 'en', kind: 's', id: 'e4-there', grade: 4, ico: '🌳', name: 'Je tam, jsou tam', en: 'there is / there are', gen: enSentences(EN_S4B), examples: () => enEx(EN_S4B),
+    learn: '<p><b>There is</b> = je tam (jedna věc). <b>There are</b> = jsou tam (víc věcí).</p><p>Pozor: česky „je tam pět židlí“, ale anglicky <b>there are five chairs</b>.</p>' },
+  { subj: 'en', kind: 's', id: 'e4-got', grade: 4, ico: '🐘', name: 'Mám, má', en: 'have got / has got', gen: enSentences(EN_S4C), examples: () => enEx(EN_S4C),
+    learn: "<p><b>I, you, we, they have got</b> · <b>he, she, it has got</b>. Zkráceně: I've got, she's got.</p><p>Zápor: <b>haven't got</b>, <b>hasn't got</b>. Otázka: <b>Have you got…? Has she got…?</b></p>" },
+  { subj: 'en', kind: 's', id: 'e4-wh', grade: 4, ico: '❓', name: 'Otázková slova', en: 'What? Where? Who?', gen: enSentences(EN_S4D), examples: () => enEx(EN_S4D),
+    learn: '<p><b>What</b> = co · <b>Where</b> = kde · <b>Who</b> = kdo · <b>When</b> = kdy · <b>How</b> = jak · <b>How many</b> = kolik · <b>How old</b> = kolik let</p>' },
+  // ---------- 5. třída ----------
+  { subj: 'en', kind: 'v', id: 'e5-shop', grade: 5, ico: '🛒', name: 'Jídlo a nákupy', en: 'Food and shopping', words: EN_SHOP, gen: enVocab(EN_SHOP),
+    learn: '<p><b>How much is it?</b> – Kolik to stojí? <b>Can I have some honey, please?</b> – Můžu dostat med, prosím?</p>' },
+  { subj: 'en', kind: 'v', id: 'e5-nature', grade: 5, ico: '🌍', name: 'Příroda', en: 'Nature', words: EN_NATURE, gen: enVocab(EN_NATURE),
+    learn: '<p><b>in the mountains</b> – na horách, <b>by the sea</b> – u moře, <b>in the forest</b> – v lese.</p>' },
+  { subj: 'en', kind: 'v', id: 'e5-opp', grade: 5, ico: '↔️', name: 'Protiklady', en: 'Opposites', words: EN_ADJ, gen: enVocab(EN_ADJ, () => enOppQ(), { noPic: true }),
+    learn: '<p>Přídavná jména se dobře učí ve dvojicích: <b>big × small</b>, <b>fast × slow</b>, <b>hot × cold</b>.</p>' },
+  { subj: 'en', kind: 'v', id: 'e5-subj', grade: 5, ico: '📚', name: 'Školní předměty', en: 'School subjects', words: EN_SUBJ, gen: enVocab(EN_SUBJ),
+    learn: '<p>Jazyky píšeme s velkým písmenem (<b>English, Czech</b>), ostatní předměty malým: <b>maths, art, music</b>.</p><p><b>My favourite subject is art.</b> – Můj oblíbený předmět je výtvarka.</p>' },
+  { subj: 'en', kind: 'v', id: 'e5-num', grade: 5, ico: '💯', name: 'Čísla do 100', en: 'Numbers to 100', gen: enNum100(),
+    examples: () => [13, 30, 14, 40, 45, 100].map(n => [enNum(n), String(n), String(n)]),
+    learn: '<p>Desítky končí na <b>-ty</b>: twenty, thirty, <b>forty</b> (bez u!), fifty… <b>45</b> = forty-five.</p><p>Pozor: thir<b>teen</b> (13) × thir<b>ty</b> (30). U -teen je přízvuk na konci, u -ty na začátku.</p>' },
+  { subj: 'en', kind: 's', id: 'e5-ing', grade: 5, ico: '📖', name: 'Co se děje právě teď', en: 'I am reading', gen: enSentences(EN_S5A), examples: () => enEx(EN_S5A),
+    learn: '<p>Co se děje <b>právě teď</b>: <b>am / is / are</b> + sloveso s <b>-ing</b>.</p><p><b>I am reading.</b> – Právě čtu. <b>She is swimming.</b> – Právě plave.</p>' },
+  { subj: 'en', kind: 's', id: 'e5-past', grade: 5, ico: '📸', name: 'Včera a loni', en: 'was / were, played', gen: enSentences(EN_S5B), examples: () => enEx(EN_S5B),
+    learn: '<p>Sloveso být v minulosti: <b>I / he / she / it was</b>, <b>you / we / they were</b>.</p><p>Pravidelná slovesa + <b>-ed</b>: play → play<b>ed</b>. Nepravidelná zpaměti: go → <b>went</b>, have → <b>had</b>, see → <b>saw</b>, make → <b>made</b>.</p>' },
+  { subj: 'en', kind: 's', id: 'e5-comp', grade: 5, ico: '⚖️', name: 'Porovnávání', en: 'bigger than', gen: enSentences(EN_S5C), examples: () => enEx(EN_S5C),
+    learn: '<p>Krátké přídavné jméno + <b>-er than</b>: big → big<b>ger than</b>, fast → fast<b>er than</b>.</p><p>Nepravidelná: good → <b>better</b>, bad → <b>worse</b>. Nejvíc: the fast<b>est</b>.</p>' },
+  { subj: 'en', kind: 'd', id: 'e5-dial', grade: 5, ico: '🛍️', name: 'Rozhovory', en: 'Conversations', gen: enDialog(EN_D5), examples: () => enExD(EN_D5),
+    learn: '<p>Užitečné věty do obchodu, na ulici i k lékaři. Poslechni si otázku a vyber nejlepší odpověď.</p>' }
+);
 /* ---------- MATIKA: cards, progress, lessons, rewards ---------- */
 // [emoji, name, fact, rarity 1–3]
 const CARDS = [
@@ -3854,13 +4563,16 @@ const CL_ORDER = () => [...PAGES.filter(p => /^f-|horse|zebra|uni|unicorn/.test(
 /* ---------- home ---------- */
 function renderHome() {
   $('#starCount').textContent = totalStars();
-  $('#mmSubj').innerHTML = [['ma', '🔢', 'Matika'], ['cj', '📖', 'Čeština']].map(([id, ico, nm]) => `<button data-s="${id}" aria-pressed="${id === subj}"><span class="ico">${ico}</span>${nm}</button>`).join('');
+  $('#mmSubj').innerHTML = [['ma', '🔢', 'Matika'], ['cj', '📖', 'Čeština'], ['en', '🇬🇧', 'Angličtina']].map(([id, ico, nm]) => `<button data-s="${id}" aria-pressed="${id === subj}"><span class="ico">${ico}</span>${nm}</button>`).join('');
   $('#mmGrades').innerHTML = [1, 2, 3, 4, 5].map(g => `<button class="chip" data-g="${g}" aria-pressed="${g === grade}" aria-label="${g}. třída">${g}.</button>`).join('');
-  const S = starsOf();
-  $('#mmTopics').innerHTML = TOPICS.filter(t => t.grade === grade && subjOf(t) === subj).map(t => {
+  const S = starsOf(), list = TOPICS.filter(t => t.grade === grade && subjOf(t) === subj), tile = t => {
     const s = S[t.id] || 0;
-    return `<button class="mm-topic" data-t="${t.id}"><span class="ico">${t.ico}</span><span class="nm">${t.name}</span><span class="st">${'★'.repeat(s)}<i>${'★'.repeat(3 - s)}</i></span></button>`;
-  }).join('');
+    return `<button class="mm-topic" data-t="${t.id}"><span class="ico">${t.ico}</span><span class="nm">${t.name}${t.en ? `<span class="en-t">${enEsc(t.en)}</span>` : ''}</span><span class="st">${'★'.repeat(s)}<i>${'★'.repeat(3 - s)}</i></span></button>`;
+  };
+  // English: words first, then phrases and sentences
+  $('#mmTopics').innerHTML = subj !== 'en' ? list.map(tile).join('') : [['📚 Slovíčka', list.filter(t => t.kind === 'v')], ['🧩 Věty a fráze', list.filter(t => t.kind !== 'v')]]
+    .filter(g => g[1].length).map(([h, ts]) => `<p class="mm-sub">${h}</p>${ts.map(tile).join('')}`).join('');
+  $('#mmDaily small').textContent = subj === 'en' ? '10 úloh – slovíčka i věty' : '10 úloh napříč učivem';
   const pz = pzUnlocked().size, cl = clUnlocked().size, cd = cardsOwned().size;
   $('#mmPz').textContent = `${pz} / ${ANIMALS.length}`; $('#mmCl').textContent = `${cl} / ${PAGES.length}`; $('#mmCd').textContent = `${cd} / ${CARDS.length}`;
 }
@@ -3876,6 +4588,7 @@ function drawHomeArt() {}
 /* ---------- learn card ---------- */
 let curTopic = null;
 function openLearn(t) {
+  if (subjOf(t) === 'en') { openLearnEn(t); return; }
   curTopic = t;
   $('#lnGo').textContent = subjOf(t) === 'cj' ? 'Rozumím, jdu na to!' : 'Rozumím, jdu počítat!';
   $('#lnTitle').textContent = t.name;
@@ -3886,6 +4599,42 @@ function openLearn(t) {
   show('learn');
 }
 $('#lnGo').addEventListener('click', () => { sfx.pick(); startLesson(curTopic); });
+// English learn card: picture cards to tap and hear, or example sentences
+let enPlayTok = 0;
+function enStopAll() { enPlayTok++; document.querySelectorAll('#lnBody .en-card.on').forEach(c => c.classList.remove('on')); }
+function openLearnEn(t) {
+  curTopic = t; enStopAll();
+  $('#lnTitle').textContent = t.name;
+  $('#lnGo').textContent = 'Jdu procvičovat! 🎯';
+  let h = `<div class="ln-card"><div class="ln-ico">${t.ico}</div>${t.words ? '<p>Ťukni na kartičku a poslechni si, jak se to řekne anglicky. Zopakuj to nahlas!</p>' : ''}${t.learn}</div>`;
+  if (t.words) {
+    const S = enLv(), known = t.words.filter(w => (S[w[1]] || 0) >= 3).length;
+    h += `<div class="en-bar"><button class="btn" id="enAll">🔊 Poslechnout všechna</button><span class="en-known">Umíš ${known} z ${t.words.length}</span></div>
+      <div class="en-cards">${t.words.map(w => { const v = S[w[1]] || 0; return `<button class="en-card" data-say="${enEsc(w[3] || w[1])}">${w[0] ? `<span class="em">${enPic(w[0])}</span>` : ''}<b>${enEsc(w[1])}</b><small>${w[2]}</small><i class="lv${!v ? '' : v >= 3 ? ' l2' : ' l1'}"></i></button>`; }).join('')}</div>`;
+  } else if (t.examples) {
+    h += `<div class="ln-card"><h3>Poslechni si a zopakuj</h3><div class="en-exs">${t.examples().map(([e, c, p]) => `<button class="en-ex" data-say="${enEsc(e.replace(' – ', ' '))}">${p ? enPic(p) : ''}<span class="tx"><b>${enEsc(e)}</b><small>${c}</small></span><span class="spk">🔊</span></button>`).join('')}</div></div>`;
+  }
+  $('#lnBody').innerHTML = h;
+  show('learn');
+}
+// read all the cards one after another
+function enPlayAll() {
+  const tok = ++enPlayTok, cards = [...document.querySelectorAll('#lnBody .en-card')]; let i = 0;
+  const step = () => {
+    if (tok !== enPlayTok || current !== 'learn') return;
+    cards.forEach(c => c.classList.remove('on'));
+    if (i >= cards.length) return;
+    const c = cards[i++]; let next = false; const adv = () => { if (next) return; next = true; setTimeout(step, 450); };
+    c.classList.add('on'); c.scrollIntoView({ block: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+    sayEn(c.dataset.say, { force: true, onend: adv }); setTimeout(adv, 3000);
+  };
+  step();
+}
+$('#lnBody').addEventListener('click', ev => {
+  if (ev.target.closest('#enAll')) { enPlayAll(); return; }
+  const s = ev.target.closest('[data-say]'); if (!s) return;
+  enStopAll(); sayEn(s.dataset.say, { force: true }); bounce(s);
+});
 
 /* ---------- lesson ---------- */
 const LS_N = 10;
@@ -3901,7 +4650,8 @@ function pickDaily() {
 function startLesson(topic) {
   const locked = ANIMALS.filter(a => !pzUnlocked().has(akey(a)));
   L = { seen: new Set(), topic, done: 0, mistakes: 0, tries: 0, q: null, qt: null, vals: [], field: 0, animal: locked[0] || ANIMALS[Math.floor(Math.random() * ANIMALS.length)], order: [...Array(LS_N).keys()].sort(() => Math.random() - .5) };
-  $('#lsTitle').textContent = topic ? topic.name : (subj === 'cj' ? 'Trénink češtiny' : 'Trénink matiky');
+  $('#lsTitle').textContent = topic ? topic.name : (subj === 'cj' ? 'Trénink češtiny' : subj === 'en' ? 'Trénink angličtiny' : 'Trénink matiky');
+  enStopAll();
   show('lesson');
   drawLessonPic();
   nextQuestion();
@@ -3918,13 +4668,24 @@ function nextQuestion() {
   L.qt = L.topic || pickDaily();
   for (let k = 0; k < 30; k++) { L.q = L.qt.gen(); if (!L.seen.has(L.q.key || L.q.q)) break; }
   L.seen.add(L.q.key || L.q.q); L.tries = 0; L.field = 0; L.si = 0; L.stTries = 0; L.log = [];
+  if (L.q.en) enCommit(L.q);
+  $('#lesson').classList.toggle('en', !!L.q.en);
   const n = L.q.steps ? 1 : Array.isArray(L.q.a) ? L.q.a.length : 1;
   L.vals = Array(n).fill('');
   $('#lsTopic').textContent = L.topic ? '' : `${L.qt.grade}. tř. · ${L.qt.name}`;
-  if (L.q.steps) renderStep(); else $('#lsQ').innerHTML = `<div class="q-in">${L.q.q}</div>`;
+  if (L.q.steps) renderStep(); else $('#lsQ').innerHTML = `<div class="q-in${L.q.en ? ' en-q' : ''}">${L.q.q}</div>`;
   $('#lsMsg').innerHTML = ''; $('#lsMsg').className = 'ls-msg';
   $('#lsChoices').className = 'ls-choices';
-  if (L.q.order) {
+  if (L.q.tiles) {
+    $('#lsPad').hidden = true; $('#lsChoices').hidden = false; $('#lsChoices').classList.add('tiles');
+    L.built = []; renderTiles();
+  } else if (L.q.pairs) {
+    $('#lsAns').innerHTML = ''; $('#lsPad').hidden = true; $('#lsChoices').hidden = true;
+    L.mSel = null; L.mDone = new Set(); L.mWrong = new Set(); L.mBad = 0;
+    // the right column never has a pair straight across
+    L.mL = czShuffle(L.q.pairs.map((_, i) => i)); do { L.mR = czShuffle(L.mL); } while (L.mR.some((v, i) => v === L.mL[i]));
+    renderPairs();
+  } else if (L.q.order) {
     $('#lsAns').innerHTML = ''; $('#lsPad').hidden = true; $('#lsChoices').hidden = false; $('#lsChoices').classList.add('stack');
     L.ord = []; L.shown = czShuffle(L.q.order.map((_, i) => i)); renderOrder();
   } else if (L.q.text) {
@@ -3936,11 +4697,14 @@ function nextQuestion() {
     $('#lsAns').innerHTML = ''; $('#lsPad').hidden = true;
     $('#lsChoices').hidden = false;
     if (L.q.wide) $('#lsChoices').classList.add('stack');
-    $('#lsChoices').innerHTML = L.q.choices.map(c => `<button class="ls-choice${L.q.choices.some(x => String(x).length > 4) ? ' long' : ''}" data-c="${c}">${c}</button>`).join('');
+    if (L.q.pics) $('#lsChoices').classList.add('pics');
+    $('#lsChoices').innerHTML = L.q.choices.map(c => `<button class="ls-choice${L.q.pics ? ' pic' : L.q.choices.some(x => String(x).length > 4) ? ' long' : ''}" data-c="${enEsc(c)}">${L.q.pics ? enPic(c) : c}</button>`).join('');
   } else {
     $('#lsChoices').hidden = true; $('#lsPad').hidden = false;
     renderAns();
   }
+  // English: read the word or sentence out loud
+  if (L.q.say) { const q0 = L.q; setTimeout(() => { if (L && L.q === q0 && current === 'lesson') sayEn(q0.say); }, 350); }
   const q = $('#lsQ'); q.classList.remove('in'); void q.offsetWidth; q.classList.add('in');
 }
 function renderStep() {
@@ -3955,7 +4719,7 @@ function renderAns() {
 }
 $('#lsAns').addEventListener('click', ev => { const b = ev.target.closest('.ls-box'); if (!b) return; L.field = +b.dataset.f; renderAns(); });
 function padKey(k) {
-  if (!L || !L.q || L.q.choices || L.lock) return;
+  if (!L || !L.q || L.q.choices || L.q.tiles || L.q.pairs || L.q.order || L.lock) return;
   let v = L.vals[L.field];
   if (k === 'del') v = v.slice(0, -1);
   else if (k === 'ok') { if (L.field < L.vals.length - 1 && L.vals[L.field] !== '') { L.field++; renderAns(); return; } check(); return; }
@@ -3968,6 +4732,12 @@ $('#lsPad').addEventListener('click', ev => { const b = ev.target.closest('butto
 document.addEventListener('keydown', ev => {
   if (current !== 'lesson') return;
   if (document.activeElement && document.activeElement.id === 'lsText') { if (ev.key === 'Enter') { ev.preventDefault(); checkText(); } return; }
+  // spelling on a keyboard: a typed letter takes the first free tile with that letter
+  if (L && L.q && L.q.tiles) {
+    if (ev.key === 'Backspace') { ev.preventDefault(); tileTap('del'); }
+    else if (L.q.mode === 'spell' && ev.key.length === 1) { const i = L.q.tiles.findIndex((t, j) => !L.built.includes(j) && t.toLowerCase() === ev.key.toLowerCase()); if (i >= 0) tileTap(String(i)); }
+    return;
+  }
   if (/^[0-9]$/.test(ev.key)) padKey(ev.key);
   else if (ev.key === 'Backspace') padKey('del');
   else if (ev.key === 'Enter') padKey('ok');
@@ -3976,6 +4746,7 @@ document.addEventListener('keydown', ev => {
   else if (ev.key === 'Tab' && L && L.vals.length > 1) { ev.preventDefault(); L.field = (L.field + 1) % L.vals.length; renderAns(); }
 });
 $('#lsChoices').addEventListener('click', ev => {
+  const t = ev.target.closest('.en-tile'); if (t) { tileTap(t.dataset.t); return; }
   const b = ev.target.closest('.ls-choice'); if (!b || !L || L.lock) return;
   if (b.id === 'lsSay') { say(L.q.speak); return; }
   if (b.id === 'lsTextOk') { checkText(); return; }
@@ -3993,6 +4764,79 @@ function orderTap(i) {
   if (L.ord.every((v, j) => v === j)) finishQuestion();
   else wrongAnswer(null, () => { L.ord = []; renderOrder(); });
 }
+/* ---------- angličtina: skládání z písmen a slov, spojování dvojic, výslovnost ---------- */
+function renderTiles() {
+  const q = L.q; let h = '';
+  for (let i = 0; i < q.need; i++) { const t = L.built[i]; h += t != null ? `<button class="en-slot on" data-b="${i}">${enEsc(q.tiles[t])}</button>` : '<span class="en-slot"></span>'; }
+  $('#lsAns').innerHTML = `<div class="en-build${q.mode === 'spell' ? ' spell' : ''}">${h}${q.end ? `<span class="en-end">${q.end}</span>` : ''}</div>`;
+  $('#lsChoices').innerHTML = q.tiles.map((t, i) => `<button class="en-tile${L.built.includes(i) ? ' used' : ''}" data-t="${i}">${enEsc(t)}</button>`).join('') +
+    '<button class="en-tile del" data-t="del" aria-label="Smazat poslední">⌫</button>';
+}
+function tileTap(k) {
+  if (!L || !L.q || !L.q.tiles || L.lock) return;
+  if (k === 'del') { if (L.built.length) { L.built.pop(); tone(400, .05, 'sine', .08); renderTiles(); } return; }
+  const i = +k; if (L.built.includes(i) || L.built.length >= L.q.need) return;
+  L.built.push(i); tone(560 + L.built.length * 40, .05, 'sine', .07); renderTiles();
+  if (L.built.length === L.q.need) checkTiles();
+}
+function checkTiles() {
+  const got = L.built.map(i => L.q.tiles[i]), want = L.q.parts;
+  if (got.every((t, i) => t === want[i])) { finishQuestion(); return; }
+  // keep the part that is right, give back the rest
+  let k = 0; while (k < got.length && got[k] === want[k]) k++;
+  wrongAnswer(null, () => { L.built = L.built.slice(0, k); renderTiles(); });
+}
+function enShowTiles() {
+  const used = new Set();
+  L.built = L.q.parts.map(p => { const i = L.q.tiles.findIndex((t, j) => t === p && !used.has(j)); used.add(i); return i; });
+  renderTiles(); $('#lsAns .en-build').classList.add('sol');
+}
+$('#lsAns').addEventListener('click', ev => {
+  const s = ev.target.closest('.en-slot[data-b]'); if (!s || !L || !L.q || !L.q.tiles || L.lock) return;
+  L.built.splice(+s.dataset.b, 1); tone(400, .05, 'sine', .08); renderTiles();
+});
+function renderPairs() {
+  const q = L.q, cell = (s, i) => {
+    const v = s === 'l' ? enEsc(q.pairs[i][0]) : q.pairPics ? enPic(q.pairs[i][1]) : enEsc(q.pairs[i][1]);
+    return `<button class="en-m m${s}${L.mDone.has(i) ? ' done' : ''}${L.mSel && L.mSel.s === s && L.mSel.i === i ? ' sel' : ''}" data-s="${s}" data-i="${i}">${v}</button>`;
+  };
+  $('#lsQ').innerHTML = `<div class="q-in en-q">${q.q}<div class="en-match">${L.mL.map((i, r) => cell('l', i) + cell('r', L.mR[r])).join('')}</div></div>`;
+}
+function pairTap(s, i) {
+  if (!L || !L.q || !L.q.pairs || L.lock || L.mDone.has(i)) return;
+  if (s === 'l') sayEn(L.q.pairs[i][2]);
+  if (!L.mSel || L.mSel.s === s) { L.mSel = { s, i }; tone(520, .05, 'sine', .07); renderPairs(); return; }
+  const a = L.mSel; L.mSel = null;
+  if (a.i === i) {
+    L.mDone.add(i); tone(760, .08, 'sine', .1); if (s === 'r') sayEn(L.q.pairs[i][2]);
+    $('#lsMsg').className = 'ls-msg'; $('#lsMsg').innerHTML = '';
+    renderPairs();
+    if (L.mDone.size === L.q.pairs.length) finishQuestion();
+    return;
+  }
+  // a wrong pair: one slip is fine, from the second one the question counts as a mistake
+  L.mBad++; if (L.mBad >= 2) L.tries = 1;
+  [a.i, i].forEach(j => { L.mWrong.add(L.q.pairs[j][0]); enRetryAdd(L.q.pairs[j][0]); });
+  tone(200, .14, 'sine', .1);
+  renderPairs();
+  document.querySelectorAll(`#lsQ .en-m[data-s="${a.s}"][data-i="${a.i}"], #lsQ .en-m[data-s="${s}"][data-i="${i}"]`).forEach(b => b.classList.add('bad'));
+  $('#lsMsg').className = 'ls-msg bad'; $('#lsMsg').innerHTML = `Tyhle dvě k sobě nepatří. 💡 ${L.q.hint}`;
+}
+$('#lsQ').addEventListener('click', ev => {
+  const m = ev.target.closest('.en-m'); if (m) { pairTap(m.dataset.s, +m.dataset.i); return; }
+  const s = ev.target.closest('[data-say]'); if (s) { sayEn(s.dataset.say, { force: true }); bounce(s); }
+});
+// bookkeeping: what was asked in this lesson, what to ask again, how well each word is known
+function enCommit(q) {
+  const E = enL(), ids = q.enWords || [q.enId];
+  ids.forEach(id => id && E.asked.add(id));
+  E.retry = E.retry.filter(r => !(ids.includes(r.id) && r.due <= L.done));
+}
+function enRetryAdd(id) { const E = enL(); if (id && !E.retry.some(r => r.id === id)) E.retry.push({ id, due: L.done + 2 }); }
+function enDone(q, ok) {
+  if (q.enWords) q.enWords.forEach(w => enMark(w, !(L.mWrong && L.mWrong.has(w))));
+  else if (q.enWord) enMark(q.enWord, ok);
+}
 const normText = v => String(v).trim().toLowerCase().replace(/[.!?]+$/, '');
 function checkText() {
   const i = $('#lsText'); if (!i) return;
@@ -4000,7 +4844,10 @@ function checkText() {
   if (normText(i.value) === normText(L.q.a)) { i.classList.add('ok'); i.blur(); finishQuestion(); }
   else wrongAnswer(null, () => { i.value = ''; i.focus(); });
 }
-$('#lsHint').addEventListener('click', () => { if (!L || !L.q) return; const st = L.q.steps && L.q.steps[L.si]; $('#lsMsg').className = 'ls-msg hint'; $('#lsMsg').innerHTML = `💡 ${st ? st.hint : L.q.hint}`; });
+$('#lsHint').addEventListener('click', () => {
+  if (!L || !L.q) return; const st = L.q.steps && L.q.steps[L.si]; $('#lsMsg').className = 'ls-msg hint'; $('#lsMsg').innerHTML = `💡 ${st ? st.hint : L.q.hint}`;
+  if (L.q.en && L.q.say) sayEn(L.q.say, { rate: .6, force: true });
+});
 const norm = s => String(s).replace(/\s| /g, '').replace('−', '-').replace(',', '.');
 function same(v, a) {
   const x = norm(v), y = norm(a);
@@ -4030,13 +4877,19 @@ function checkStep() {
 function finishQuestion(btn) {
   L.lock = true;
   if (btn) btn.classList.add('ok');
-  $('#lsMsg').className = 'ls-msg ok'; $('#lsMsg').innerHTML = L.q.steps ? `${pk(['Hotovo!', 'Výborně!', 'Paráda!'])} ${L.q.final || ''}` : pk(['Správně!', 'Výborně!', 'Super!', 'Paráda!', 'Přesně tak!']) + (L.q.filled ? ` <b>${L.q.filled}</b>` : '');
-  if (L.q.filled) $('#lsQ .cz-q') && ($('#lsQ .cz-q').innerHTML = $('#lsQ .cz-q').innerHTML.replace('<span class="gap">_</span>', `<span class="gap ok">${L.q.a}</span>`));
+  const q = L.q, en = !!q.en;
+  $('#lsMsg').className = 'ls-msg ok'; $('#lsMsg').innerHTML = q.steps ? `${pk(['Hotovo!', 'Výborně!', 'Paráda!'])} ${q.final || ''}` : pk(en ? EN_PRAISE : ['Správně!', 'Výborně!', 'Super!', 'Paráda!', 'Přesně tak!']) + (q.filled ? ` <b>${en ? enEsc(q.filled) : q.filled}</b>` : '');
+  if (q.filled) $('#lsQ .cz-q') && ($('#lsQ .cz-q').innerHTML = $('#lsQ .cz-q').innerHTML.replace('<span class="gap">_</span>', `<span class="gap ok">${en ? enEsc(q.a) : q.a}</span>`));
   if (L.tries) L.mistakes++;
+  if (en) enDone(q, !L.tries);
   const tile = $(`#lsCover i[data-k="${L.order[L.done]}"]`); if (tile) tile.classList.add('off');
   L.done++; sfx.snap();
   const r = $('#lsQ').getBoundingClientRect(); sparkleAt(r.left + r.width / 2, r.top + r.height / 2, 14);
-  setTimeout(() => { if (!L) return; L.lock = false; nextQuestion(); }, L.q.steps ? 1800 : 900);
+  const me = L, wait = q.steps ? 1800 : 900; let gone = false;
+  const go = () => { if (gone || L !== me) return; gone = true; L.lock = false; nextQuestion(); };
+  // English: say the right answer once more and move on when it has been said
+  if (en && q.sayOk && canHear()) { const t0 = Date.now(); sayEn(q.sayOk, { onend: () => setTimeout(go, Math.max(250, wait - (Date.now() - t0))) }); setTimeout(go, wait + Math.min(3200, q.sayOk.length * 70)); }
+  else setTimeout(go, wait);
 }
 function check(btn) {
   if (L.q.steps) { checkStep(); return; }
@@ -4048,16 +4901,24 @@ function check(btn) {
 }
 function wrongAnswer(btn, reset) {
   L.tries++;
+  if (L.q.en) enRetryAdd(L.q.enId);
   if (btn) { btn.classList.remove('bad'); void btn.offsetWidth; btn.classList.add('bad'); }
   tone(200, .14, 'sine', .1); tone(160, .16, 'sine', .08, .08);
   const a = $('#lsAns'); a.classList.remove('shake'); void a.offsetWidth; a.classList.add('shake');
   if (L.tries === 1) { $('#lsMsg').className = 'ls-msg bad'; $('#lsMsg').innerHTML = `Ještě jednou. 💡 ${L.q.hint}`; reset(); return; }
   // second mistake: show how it is solved, then a new example of the same kind
   L.mistakes++; L.lock = true;
-  $('#lsMsg').className = 'ls-msg sol'; $('#lsMsg').innerHTML = `<b>Řešení:</b><br>${L.q.explain}<br><button class="btn primary" id="lsNext">Rozumím, další příklad</button>`;
+  $('#lsMsg').className = 'ls-msg sol'; $('#lsMsg').innerHTML = `<b>Řešení:</b><br>${L.q.explain}<br><button class="btn primary" id="lsNext">${L.q.en ? 'Jasně, další!' : 'Rozumím, další příklad'}</button>`;
   $('#lsNext').onclick = () => { L.lock = false; nextQuestion(); };
+  if (L.q.en) {
+    // show the right answer and say it; the word comes back later in the lesson
+    enDone(L.q, false);
+    if (L.q.tiles) enShowTiles();
+    else document.querySelectorAll('#lsChoices .ls-choice').forEach(b => { if (b.dataset.c === String(L.q.a)) b.classList.add('ok'); });
+    if (L.q.sayOk) sayEn(L.q.sayOk);
+  }
 }
-$('#lsBack').addEventListener('click', () => { L = null; renderHome(); show('home'); });
+$('#lsBack').addEventListener('click', () => { L = null; try { speechSynthesis.cancel(); } catch (e) {} renderHome(); show('home'); });
 function finishLesson() {
   const stars = L.mistakes <= 1 ? 3 : L.mistakes <= 3 ? 2 : 1;
   if (L.topic) { const S = starsOf(); S[L.topic.id] = Math.max(S[L.topic.id] || 0, stars); mmSet('stars', S); }
@@ -4100,7 +4961,7 @@ function renderAlbum() {
 $('#alGrid').addEventListener('click', ev => { const b = ev.target.closest('.al-slot[data-i]'); if (!b) return; const c = CARDS[+b.dataset.i]; showWin(cardHtml(c, true), c[1], c[2], [{ label: 'Zpět do sbírky', cls: 'primary', fn: () => { $('#win').hidden = true; } }]); say(c[2]); });
 /* ---------- BOOT ---------- */
 $('#sceneBg').innerHTML = SCENE_SVG;
-if ('speechSynthesis' in window) { try { speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = () => { czVoice = null; czechVoice(); }; } catch (e) {} }
+if ('speechSynthesis' in window) { try { speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = () => { czVoice = null; enVoiceSel = null; czechVoice(); }; } catch (e) {} }
 document.addEventListener('gesturestart', ev => ev.preventDefault());
 document.addEventListener('dblclick', ev => ev.preventDefault(), { passive: false });
 $('#glitterDefs').innerHTML = glitterDefs();
