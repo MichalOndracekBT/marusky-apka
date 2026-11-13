@@ -4,6 +4,9 @@ Matika, čeština a angličtina pro 1.–5. třídu na telefon i tablet. Hrát: 
 
 ## Zadání (jak to funguje)
 
+- **Logo – zajíček** (`icon-192.png`, `icon-512.png`, `apple-touch-icon.png`): ikona appky a zároveň maskot vedle nadpisu na úvodní obrazovce – ťuknutím pozdraví. Na ploše iPhonu/iPadu se appka jmenuje „Škola“.
+- **Velikost podle obrazovky**: na telefonu je vše jako dřív, na tabletu a počítači se celá appka úměrně zvětší (`--u` = jeden „designový pixel“, roste s menší stranou okna).
+- **Velká obrazovka naležato** (PC, tablet na šířku): domovská stránka ve dvou sloupcích – vlevo trénink a odměny, vpravo předmět, třída a témata bez posouvání. V lekci je vlevo otázka s velkým obrázkem a odkrývaným obrázkem, vpravo velká tlačítka odpovědí, klávesnice a nápověda. Spojování dvojic má celou šířku.
 - **Výběr třídy 1.–5.** – výchozí je 5. třída, starší učivo jde kdykoli zopakovat.
 - **35 témat podle učiva základní školy**
   - 1. tř.: sčítání a odčítání do 10 a do 20, přechod přes desítku, porovnávání, doplň číslo
@@ -32,7 +35,11 @@ Matika, čeština a angličtina pro 1.–5. třídu na telefon i tablet. Hrát: 
 
 ## Angličtina (45 témat)
 
-Témata jsou na úvodní obrazovce rozdělená na **Slovíčka** a **Věty a fráze**. Výslovnost čte britský hlas zařízení – ťuknutím na 🔊 nebo na kartičku.
+Témata jsou na úvodní obrazovce rozdělená na **Slovíčka** a **Věty a fráze**. Výslovnost čte britský hlas – ťuknutím na 🔊 nebo na kartičku.
+
+- **Který hlas**: nejdřív přirozené online hlasy (Google UK English v Chromu, Microsoft … Online (Natural) v Edge), pak nejlepší britský hlas zařízení (Daniel/Kate/Serena…, „Enhanced/Premium“ přednost).
+- **Chrome a Edge na Macu** zvolený systémový hlas ignorují a čtou výchozím hlasem systému – na českém Macu tedy angličtinu česky. Tam se proto systémové hlasy nepoužívají vůbec, jen online hlasy.
+- Když zařízení **nemá žádný anglický hlas**, appka angličtinu nečte (radši nic než česky), úlohy na poslech vynechá a na kartičkách ukáže rodičům, ať anglický hlas doinstalují.
 
 - 1. tř.: barvy, čísla 1–10, zvířátka, hračky, ovoce, rodina · pozdravy a kouzelná slovíčka, první věty (It's a cat. I like apples.)
 - 2. tř.: ve škole, moje tělo, jídlo a pití, oblečení, čísla 11–20 · pokyny ve třídě (Stand up!), I like / I don't like, This is my… / I've got…
